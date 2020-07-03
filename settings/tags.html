@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Settings | Tags | Omnia Push</title>
+    <meta name="theme-color" content="#383838" />
+</head>
+
+<body>
+    <div class="body_wrapper xs-fbs">
+        <nav>
+            <div class="nav_scroll_container">
+                <div class="nav_navigation">
+
+                    <div class="nav_logo">
+                        <a href="#" class="xs-fcc">
+                            <img src="/img/logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="nav_menu">
+                        <ul>
+                            <li>
+                                <a href="/">
+                                    <p>
+                                        <i class="fas fa-chart-bar"></i>
+                                        <span>Dashboard</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/audience.html">
+                                    <p>
+                                        <i class="fas fa-comment-dots"></i>
+                                        <span>Audience</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/campaigns.html">
+                                    <p>
+                                        <i class="fas fa-briefcase"></i>
+                                        <span>Campaigns</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/sequences">
+                                    <p>
+                                        <i class="fas fa-vector-square"></i>
+                                        <span>Sequences</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="current_page_is_active">
+                                <a href="/settings.html">
+                                    <p>
+                                        <i class="fas fa-cog"></i>
+                                        <span>Settings</span>
+                                    </p>
+                                    <i class="fas fa-sort-down"></i>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="/settings/users.html">
+                                            <p>
+                                                <i class="fas fa-circle"></i>
+                                                <span>Users</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/settings/traffic-sources.html">
+                                            <p>
+                                                <i class="fas fa-circle"></i>
+                                                <span>Traffic Sources</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/settings/categories.html">
+                                            <p>
+                                                <i class="fas fa-circle"></i>
+                                                <span>Categories</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/settings/tags.html">
+                                            <p>
+                                                <i class="fas fa-circle"></i>
+                                                <span>Tags</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/generate_link.html">
+                                    <p>
+                                        <i class="fas fa-link"></i>
+                                        <span>Generate Link</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="nav_logout">
+                    <ul>
+                        <li class="xs-fbc">
+                            <div class="xs-fsc">
+                                <img src="/img/user.png" alt="">
+                                <p>Emil Walter</p>
+                            </div>
+                            <a href="#">
+                                <i class="fas fa-sign-out-alt"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="main_scroll_container">
+
+                <div class="main_cramps xs-fsc">
+                    <h4><a href="#">Settings</a></h4>
+                    <p><a href="#">Tags</a></p>
+                </div>
+
+                <div class="main_work_space">
+
+                    <div class="settings_work_space xs-fss">
+
+                        <div class="settings_navigation">
+                            <ul>
+                                <li>
+                                    <a href="/settings/users.html">
+                                        <p>
+                                            <span>Users</span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/settings/traffic-sources.html">
+                                        <p>
+                                            <span>Traffic Sources</span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/settings/categories.html">
+                                        <p>
+                                            <span>Categories</span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="current_page_is_active">
+                                    <a href="/settings/tags.html">
+                                        <p>
+                                            <span>Tags</span>
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> <!-- settings_navigation -->
+
+                        <div class="settings_content">
+                            
+                            <div class="settings_content_add_something xs-fec">
+                                <button class="settings_content_add_traffic_source">Add New Tag</button>
+                            </div>
+
+
+                            <div class="table_container">
+                                <div class="settings_table">
+                                    <ul class="settings_table_head">
+                                        <li>Tags 
+                                            <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div>
+                                        </li>
+                                        <li></li>
+                                    </ul>
+                                    <div class="settings_table_body">
+                                        <ul class="settings_table_ul" data-key="1">
+                                            <li data-id="1">
+                                                <div>
+                                                    <input type="text" placeholder="Source" value="#Fb">
+                                                    <button class="save"><i class="fas fa-save"></i></button>
+                                                </div>
+                                            </li>
+                                            <li><button class="delete">delete</button></li>
+                                        </ul>
+                                        <ul class="settings_table_ul" data-key="1">
+                                            <li data-id="1">
+                                                <div>
+                                                    <input type="text" placeholder="Source" value="#Google">
+                                                    <button class="save"><i class="fas fa-save"></i></button>
+                                                </div>
+                                            </li>
+                                            <li><button class="delete">delete</button></li>
+                                        </ul>
+                                        <ul class="settings_table_ul" data-key="1">
+                                            <li data-id="1">
+                                                <div>
+                                                    <input type="text" placeholder="Source" value="#Instagram">
+                                                    <button class="save"><i class="fas fa-save"></i></button>
+                                                </div>
+                                            </li>
+                                            <li><button class="delete">delete</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div> <!-- table_container -->
+
+                            <div class="template_to_create_new_table_ul" style="display: none;">
+                                <ul class="settings_table_ul" data-key="null">
+                                    <li data-id="undefined">
+                                        <div>
+                                            <input type="text" placeholder="Source" value="">
+                                            <button class="save"><i class="fas fa-save"></i></button>
+                                        </div>
+                                    </li>
+                                    <li><button class="delete">delete</button></li>
+                                </ul>
+                            </div>
+
+                            <!-- settings_pop_up_create_new_table_ul -->
+                            <div class="settings_pop_up_create_new_table_ul">
+                                <div class="settings_pop_up_create_new_table_ul_container">
+
+                                    <div class="xs-fbc">
+                                        <p>Create New Tag</p>
+                                        <button class="settings_pop_up_create_new_table_ul_container_close"><i class="fas fa-times"></i></button>
+                                    </div>
+                                    
+                                    <div class="settings_pop_up_create_new_table_ul_container_input">
+                                        <p>Name</p>
+                                        <input type="text" placeholder="#Tag">
+                                    </div>
+
+                                    <div class="settings_pop_up_create_new_table_ul_container_save">
+                                        <button>Save</button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <!-- main style -->
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/style-custom.css">
+        <script src="/js/jquery-3.1.1.min.js"></script>
+        <script src="/js/script.js"></script>
+
+        <!-- page -->
+        <link rel="stylesheet" href="/css/work_space/settings.css">
+        <script src="/js/settings.js"></script>
+
+        <!-- pluggins -->
+
+    </div>
+</body>
+
+</html>

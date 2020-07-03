@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Preloader | Omnia Push</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    </head>
+    <body>
+
+    <style>
+       .preloader{
+            position:fixed;
+            width:100%;
+            height:100%;
+            left: 0;
+            top: 0;
+            height: calc( var(--vh, 1vh) * 100 );
+            background: #41376d;
+            background: -moz-linear-gradient(top, #41376d 0%, #41376d 50%, #2f2d37 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, #41376d), color-stop(50%, #41376d), color-stop(100%, #2f2d37));
+            background: -webkit-linear-gradient(top, #41376d 0%, #41376d 50%, #2f2d37 100%);
+            background: -o-linear-gradient(top, #41376d 0%, #41376d 50%, #2f2d37 100%);
+            background: -ms-linear-gradient(top, #41376d 0%, #41376d 50%, #2f2d37 100%);
+            background: linear-gradient(to bottom, #41376d 0%, #41376d 50%, #2f2d37 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41376d', endColorstr='#2f2d37', GradientType=0 );
+            z-index:1000;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .preloader img {
+            width: 200px;
+           -webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
+            filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
+        }
+    </style>
+
+    <div class="preloader"><img src="img/logo.png" alt=""></div>
+
+    
+    <!-- main style -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style-custom.css">
+    <!-- end -->
+        
+    <!-- main js -->
+    <script src="/js/jquery-3.1.1.min.js"></script>
+    <script src="/js/script.js"></script>
+    <!-- end -->
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.preloader').delay(100).fadeOut(400);
+        });
+    </script>
+        
+</body>
+</html>

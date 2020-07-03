@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Campaings | Omnia Push</title>
+    <meta name="theme-color" content="#383838" />
+</head>
+
+<body>
+    <div class="body_wrapper xs-fbs">
+       <nav>
+            <div class="nav_scroll_container">
+                <div class="nav_navigation">
+
+                    <div class="nav_logo">
+                        <a href="#" class="xs-fcc">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="nav_menu">
+                        <ul>
+                            <li>
+                                <a href="/">
+                                    <p>
+                                        <i class="fas fa-chart-bar"></i>
+                                        <span>Dashboard</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/audience.html">
+                                    <p>
+                                        <i class="fas fa-comment-dots"></i>
+                                        <span>Audience</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="current_page_is_active">
+                                <a href="/campaigns.html">
+                                    <p>
+                                        <i class="fas fa-briefcase"></i>
+                                        <span>Campaigns</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/sequences">
+                                    <p>
+                                        <i class="fas fa-vector-square"></i>
+                                        <span>Sequences</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/settings.html">
+                                    <p>
+                                        <i class="fas fa-cog"></i>
+                                        <span>Settings</span>
+                                    </p>
+                                    <i class="fas fa-sort-down"></i>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="/settings/users.html">
+                                            <p>
+                                                <i class="fas fa-circle"></i>
+                                                <span>Users</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/settings/traffic-sources.html">
+                                            <p>
+                                                <i class="fas fa-circle"></i>
+                                                <span>Traffic Sources</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/settings/categories.html">
+                                            <p>
+                                                <i class="fas fa-circle"></i>
+                                                <span>Categories</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/settings/tags.html">
+                                            <p>
+                                                <i class="fas fa-circle"></i>
+                                                <span>Tags</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/generate_link.html">
+                                    <p>
+                                        <i class="fas fa-link"></i>
+                                        <span>Generate Link</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="nav_logout">
+                    <ul>
+                        <li class="xs-fbc">
+                            <div class="xs-fsc">
+                                <img src="img/user.png" alt="">
+                                <p>Emil Walter</p>
+                            </div>
+                            <a href="#">
+                                <i class="fas fa-sign-out-alt"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="main_scroll_container">
+
+                <div class="main_cramps xs-fbc">
+                    <div class="main_cramps_left xs-fcc">
+                        <h4><a href="#">Campaigns</a></h4>
+                    </div>
+                    <button class="new_campaign">+ New Campaign</button>
+                </div>
+
+                <div class="main_work_space">
+                    <div class="campaigns_container">
+                        <div class="campaigns_filter_container">
+
+                            <div class="xs-fsc">
+                                <div class="campaigns_filter">
+                                    <button>
+                                        <i class="fas fa-filter"></i>
+                                        <p>Filter</p>
+                                    </button>
+                                </div>
+                                <div class="campaigns_search xs-fcc">
+                                    <button>
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                    <input type="text" placeholder="Search">
+                                </div>
+                            </div>
+
+                            <div class="xs-fbs xs-fw">
+                                <div class="campaign_filters_condition xs-fsc xs-fw">
+                                    
+                                    <!-- solo filter block -->
+
+                                    <div class="campaign_add_condition xs-fsc">
+                                        <button class="campaign_add_condition_button">+ <span> Condition</span></button>
+                                        <ul class="campaign_add_condition_dropdown">
+                                            <li class="language">
+                                                <p data-value="language">Language</p>
+                                                <ul><li data-value="174" class="language">Abkhazian</li><li data-value="175" class="language">Afar</li><li data-value="176" class="language">Afrikaans</li><li data-value="177" class="language">Akan</li><li data-value="178" class="language">Albanian</li><li data-value="179" class="language">Amharic</li><li data-value="180" class="language">Arabic</li><li data-value="181" class="language">Aragonese</li><li data-value="182" class="language">Armenian</li><li data-value="183" class="language">Assamese</li><li data-value="184" class="language">Avaric</li><li data-value="185" class="language">Avestan</li><li data-value="186" class="language">Aymara</li><li data-value="187" class="language">Azerbaijani</li><li data-value="188" class="language">Bambara</li><li data-value="189" class="language">Bashkir</li><li data-value="190" class="language">Basque</li><li data-value="191" class="language">Belarusian</li><li data-value="192" class="language">Bengali</li><li data-value="193" class="language">Bihari</li><li data-value="194" class="language">Bislama</li><li data-value="195" class="language">Bosnian</li><li data-value="196" class="language">Breton</li><li data-value="197" class="language">Bulgarian</li><li data-value="198" class="language">Burmese</li><li data-value="200" class="language">Central Khmer</li><li data-value="201" class="language">Chamorro</li><li data-value="202" class="language">Chechen</li><li data-value="203" class="language">Chinese</li><li data-value="204" class="language">Chuvash</li><li data-value="205" class="language">Cornish</li><li data-value="206" class="language">Corsican</li><li data-value="207" class="language">Cree</li><li data-value="208" class="language">Croatian</li><li data-value="209" class="language">Czech</li><li data-value="210" class="language">Danish</li><li data-value="212" class="language">Dutch</li><li data-value="213" class="language">Dzongkha</li><li data-value="214" class="language">English</li><li data-value="215" class="language">Esperanto</li><li data-value="216" class="language">Estonian</li><li data-value="217" class="language">Ewe</li><li data-value="218" class="language">Faroese</li><li data-value="219" class="language">Fijian</li><li data-value="220" class="language">Finnish</li><li data-value="221" class="language">French</li><li data-value="222" class="language">Fulah</li><li data-value="223" class="language">Galician</li><li data-value="224" class="language">Ganda</li><li data-value="225" class="language">Georgian</li><li data-value="226" class="language">German</li><li data-value="228" class="language">Greek</li><li data-value="229" class="language">Greenlandic</li><li data-value="230" class="language">Guarani</li><li data-value="231" class="language">Gujarati</li><li data-value="232" class="language">Haitian</li><li data-value="233" class="language">Hausa</li><li data-value="234" class="language">Hebrew</li><li data-value="235" class="language">Herero</li><li data-value="236" class="language">Hindi</li><li data-value="237" class="language">Hiri Motu</li><li data-value="238" class="language">Hungarian</li><li data-value="239" class="language">Icelandic</li><li data-value="240" class="language">Ido</li><li data-value="241" class="language">Igbo</li><li data-value="242" class="language">Indonesian</li><li data-value="243" class="language">Inuktitut</li><li data-value="244" class="language">Inupiaq</li><li data-value="245" class="language">Irish</li><li data-value="246" class="language">Italian</li><li data-value="247" class="language">Japanese</li><li data-value="248" class="language">Javanese</li><li data-value="249" class="language">Kannada</li><li data-value="250" class="language">Kanuri</li><li data-value="251" class="language">Kashmiri</li><li data-value="252" class="language">Kazakh</li><li data-value="227" class="language">Kikuyu</li><li data-value="253" class="language">Kinyarwanda</li><li data-value="254" class="language">Komi</li><li data-value="255" class="language">Kongo</li><li data-value="256" class="language">Korean</li><li data-value="258" class="language">Kurdish</li><li data-value="257" class="language">Kwanyama</li><li data-value="259" class="language">Kyrgyz</li><li data-value="260" class="language">Lao</li><li data-value="261" class="language">Latin</li><li data-value="262" class="language">Latvian</li><li data-value="264" class="language">Limburger</li><li data-value="265" class="language">Lingala</li><li data-value="266" class="language">Lithuanian</li><li data-value="267" class="language">Luba-Katanga</li><li data-value="263" class="language">Luxembourgish</li><li data-value="268" class="language">Macedonian</li><li data-value="269" class="language">Malagasy</li><li data-value="270" class="language">Malay</li><li data-value="271" class="language">Malayalam</li><li data-value="211" class="language">Maldivian</li><li data-value="272" class="language">Maltese</li><li data-value="273" class="language">Manx</li><li data-value="274" class="language">Maori</li><li data-value="275" class="language">Marathi</li><li data-value="276" class="language">Marshallese</li><li data-value="277" class="language">Moldavian</li><li data-value="278" class="language">Mongolian</li><li data-value="279" class="language">Nauru</li><li data-value="280" class="language">Navajo</li><li data-value="282" class="language">Ndonga</li><li data-value="283" class="language">Nepali</li><li data-value="281" class="language">Northern Ndebele</li><li data-value="284" class="language">Northern Sami</li><li data-value="285" class="language">Norwegian</li><li data-value="286" class="language">Norwegian Bokmål</li><li data-value="287" class="language">Norwegian Nynorsk</li><li data-value="288" class="language">Nuosu</li><li data-value="289" class="language">Ojibwa</li><li data-value="290" class="language">Oriya</li><li data-value="291" class="language">Oromo</li><li data-value="292" class="language">Ossetian</li><li data-value="293" class="language">Pali</li><li data-value="296" class="language">Persian</li><li data-value="297" class="language">Polish</li><li data-value="298" class="language">Portuguese</li><li data-value="294" class="language">Punjabi</li><li data-value="295" class="language">Pushto</li><li data-value="299" class="language">Quechua</li><li data-value="300" class="language">Romansh</li><li data-value="301" class="language">Rundi</li><li data-value="302" class="language">Russian</li><li data-value="303" class="language">Samoan</li><li data-value="304" class="language">Sango</li><li data-value="305" class="language">Sanskrit</li><li data-value="306" class="language">Sardinian</li><li data-value="307" class="language">Serbian</li><li data-value="308" class="language">Shona</li><li data-value="309" class="language">Sindhi</li><li data-value="310" class="language">Sinhalese</li><li data-value="311" class="language">Slovak</li><li data-value="312" class="language">Slovenian</li><li data-value="313" class="language">Somali</li><li data-value="314" class="language">Spanish</li><li data-value="315" class="language">Sundanese</li><li data-value="316" class="language">Swahili</li><li data-value="317" class="language">Swati</li><li data-value="318" class="language">Swedish</li><li data-value="319" class="language">Tagalog</li><li data-value="320" class="language">Tahitian</li><li data-value="321" class="language">Tajik</li><li data-value="322" class="language">Tamil</li><li data-value="323" class="language">Tatar</li><li data-value="324" class="language">Telugu</li><li data-value="325" class="language">Thai</li><li data-value="326" class="language">Tibetan</li><li data-value="327" class="language">Tigrinya</li><li data-value="328" class="language">Tsonga</li><li data-value="329" class="language">Tswana</li><li data-value="330" class="language">Turkish</li><li data-value="331" class="language">Turkmen</li><li data-value="332" class="language">Twi</li><li data-value="333" class="language">Uighur</li><li data-value="334" class="language">Ukrainian</li><li data-value="335" class="language">Urdu</li><li data-value="336" class="language">Uzbek</li><li data-value="199" class="language">Valencian</li><li data-value="337" class="language">Venda</li><li data-value="338" class="language">Vietnamese</li><li data-value="339" class="language">Walloon</li><li data-value="340" class="language">Welsh</li><li data-value="341" class="language">Wolof</li><li data-value="342" class="language">Xhosa</li><li data-value="343" class="language">Yiddish</li><li data-value="344" class="language">Yoruba</li><li data-value="345" class="language">Zhuang</li><li data-value="346" class="language">Zulu</li></ul>
+                                            </li>
+                                            <li class="group">
+                                                <p data-value="group">Group</p>
+                                                <ul>
+                                                    <li data-value="group_1" class="group">group 1</li>
+                                                    <li data-value="group_2" class="group">group 2</li>
+                                                    <li data-value="group_3" class="group">group 3</li>
+                                                    <li data-value="group_4" class="group">group 4</li>
+                                                    <li data-value="group_5" class="group">group 5</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="table_container">
+                            <div class="campaigns_table">
+                                <ul class="campaigns_table_head">
+                                    <li>Name <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div></li>
+                                    <li>Photo <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div></li>
+                                    <li>Views <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div></li>
+                                    <li>Clicks <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div></li>
+                                    <li>CTR <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div></li>
+                                    <li>Leads <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div></li>
+                                    <li>Lang<div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div></li>
+                                    <li>Group <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div></li>
+                                    <li></li>
+                                </ul>
+                                <div class="campaigns_table_body">
+                                    <ul class="campaigns_table_ul" data-key="1" data-language="ru" data-group="group_2">
+                                        <li data-id="1_1" class="name"><p>camp 1</p></li>
+                                        <li data-id="1_2" class="photo"><img src="img/campaigns_pop_up_bg.png" alt=""></li>
+                                        <li data-id="1_3" class="views"><p>3543</p></li>
+                                        <li data-id="1_4" class="clicks"><p>1,2341</p></li>
+                                        <li data-id="1_5" class="ctr"><p>0.53%</p></li>
+                                        <li data-id="1_6" class="leads"><p>123</p></li>
+                                        <li data-id="1_7" class="language"><p data-language="ru">RU</p></li>
+                                        <li data-id="1_8" class="group"><p data-group="group_2">group 2</p></li>
+                                        <li data-id="1_9" class="edit"><i class="fas fa-ellipsis-v"></i>
+                                            <ul>
+                                                <li>
+                                                    <button class="campaigns_table_ul_edit">Edit</button>
+                                                </li>
+                                                <li>
+                                                    <button class="campaigns_table_ul_dublicate">Dublicate</button>
+                                                </li>
+                                                <li>
+                                                    <button class="campaigns_table_ul_delete">Delete</button>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="campaigns_table_ul" data-key="2" data-language="en" data-group="group_4">
+                                        <li data-id="2_1" class="name"><p>camp 2</p></li>
+                                        <li data-id="2_2" class="photo"><img src="img/campaigns_crypto_category_picture.jpg" alt=""></li>
+                                        <li data-id="2_3" class="views"><p>3543</p></li>
+                                        <li data-id="2_4" class="clicks"><p>1,2341</p></li>
+                                        <li data-id="2_5" class="ctr"><p>0.53%</p></li>
+                                        <li data-id="2_6" class="leads"><p>123</p></li>
+                                        <li data-id="2_7" class="language"><p data-language="en">EN</p></li>
+                                        <li data-id="2_8" class="group"><p data-group="group_4">group 4</p></li>
+                                        <li data-id="2_9" class="edit"><i class="fas fa-ellipsis-v"></i>
+                                            <ul>
+                                                <li>
+                                                    <button class="campaigns_table_ul_edit">Edit</button>
+                                                </li>
+                                                <li>
+                                                    <button class="campaigns_table_ul_dublicate">Dublicate</button>
+                                                </li>
+                                                <li>
+                                                    <button class="campaigns_table_ul_delete">Delete</button>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                    <ul class="campaigns_table_ul" data-key="3" data-language="ua" data-group="group_1">
+                                        <li data-id="2_1" class="name"><p>camp 3</p></li>
+                                        <li data-id="2_2" class="photo"><img src="img/campaigns_crypto_category_picture.jpg" alt=""></li>
+                                        <li data-id="2_3" class="views"><p>3543</p></li>
+                                        <li data-id="2_4" class="clicks"><p>1,2341</p></li>
+                                        <li data-id="2_5" class="ctr"><p>0.53%</p></li>
+                                        <li data-id="2_6" class="leads"><p>123</p></li>
+                                        <li data-id="2_7" class="language"><p data-language="ua">UA</p></li>
+                                        <li data-id="2_8" class="group"><p data-group="group_1">group 1</p></li>
+                                        <li data-id="2_9" class="edit"><i class="fas fa-ellipsis-v"></i>
+                                            <ul>
+                                                <li>
+                                                    <button class="campaigns_table_ul_edit">Edit</button>
+                                                </li>
+                                                <li>
+                                                    <button class="campaigns_table_ul_dublicate">Dublicate</button>
+                                                </li>
+                                                <li>
+                                                    <button class="campaigns_table_ul_delete">Delete</button>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                    <ul class="campaigns_table_ul" data-key="4" data-language="en" data-group="group_3">
+                                        <li data-id="2_1" class="name"><p>camp 4</p></li>
+                                        <li data-id="2_2" class="photo"><img src="img/campaigns_crypto_category_picture.jpg" alt=""></li>
+                                        <li data-id="2_3" class="views"><p>3543</p></li>
+                                        <li data-id="2_4" class="clicks"><p>1,2341</p></li>
+                                        <li data-id="2_5" class="ctr"><p>0.53%</p></li>
+                                        <li data-id="2_6" class="leads"><p>123</p></li>
+                                        <li data-id="2_7" class="language"><p data-language="en">EN</p></li>
+                                        <li data-id="2_8" class="group"><p data-group="group_3">group 3</p></li>
+                                        <li data-id="2_9" class="edit"><i class="fas fa-ellipsis-v"></i>
+                                            <ul>
+                                                <li>
+                                                    <button class="campaigns_table_ul_edit">Edit</button>
+                                                </li>
+                                                <li>
+                                                    <button class="campaigns_table_ul_dublicate">Dublicate</button>
+                                                </li>
+                                                <li>
+                                                    <button class="campaigns_table_ul_delete">Delete</button>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                    <ul class="campaigns_table_ul" data-key="11" data-language="de" data-group="group_2">
+                                        <li data-id="1_1" class="name"><p>camp 11</p></li>
+                                        <li data-id="1_2" class="photo"><img src="img/campaigns_pop_up_bg.png" alt=""></li>
+                                        <li data-id="1_3" class="views"><p>3543</p></li>
+                                        <li data-id="1_4" class="clicks"><p>1,2341</p></li>
+                                        <li data-id="1_5" class="ctr"><p>0.53%</p></li>
+                                        <li data-id="1_6" class="leads"><p>123</p></li>
+                                        <li data-id="1_7" class="language"><p data-language="de">DE</p></li>
+                                        <li data-id="1_8" class="group"><p data-group="group_2">group 2</p></li>
+                                        <li data-id="1_9" class="edit"><i class="fas fa-ellipsis-v"></i>
+                                            <ul>
+                                                <li>
+                                                    <button class="campaigns_table_ul_edit">Edit</button>
+                                                </li>
+                                                <li>
+                                                    <button class="campaigns_table_ul_dublicate">Dublicate</button>
+                                                </li>
+                                                <li>
+                                                    <button class="campaigns_table_ul_delete">Delete</button>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+
+                            </div>
+                            <div class="show_more_btn">
+                                <button>Show More</button>
+                            </div>
+                        </div> <!-- table_container -->
+                    </div>
+
+                    <div class="campaigns_create_container">
+                        <button>
+                            <h4>+</h4>
+                            <h4>New Campaigns</h4>
+                        </button>
+                    </div>
+                    
+                    <div class="add_new_condition_block_script" style="display: none;">
+                        <div class="campaign_filter_condition_container">
+                            <div class="campaign_filter_condition_container_close">
+                                <button><i class="fas fa-times"></i></button>
+                            </div>
+                            <div class="group_filter">
+                                <p class="group_filter_value">Filter by</p>
+                                <ul class="">
+                                    <li data-value="language" class="language">Language</li>
+                                    <li data-value="group" class="group">Group</li>
+                                </ul>
+                            </div>
+                            <div class="div_separator"></div> 
+                            <div class="sub_group_filter">
+                                <p class="sub_group_value">Value</p>
+                                <ul class="">
+                                    <li data-value="174" class="language">Abkhazian</li><li data-value="175" class="language">Afar</li><li data-value="176" class="language">Afrikaans</li><li data-value="177" class="language">Akan</li><li data-value="178" class="language">Albanian</li><li data-value="179" class="language">Amharic</li><li data-value="180" class="language">Arabic</li><li data-value="181" class="language">Aragonese</li><li data-value="182" class="language">Armenian</li><li data-value="183" class="language">Assamese</li><li data-value="184" class="language">Avaric</li><li data-value="185" class="language">Avestan</li><li data-value="186" class="language">Aymara</li><li data-value="187" class="language">Azerbaijani</li><li data-value="188" class="language">Bambara</li><li data-value="189" class="language">Bashkir</li><li data-value="190" class="language">Basque</li><li data-value="191" class="language">Belarusian</li><li data-value="192" class="language">Bengali</li><li data-value="193" class="language">Bihari</li><li data-value="194" class="language">Bislama</li><li data-value="195" class="language">Bosnian</li><li data-value="196" class="language">Breton</li><li data-value="197" class="language">Bulgarian</li><li data-value="198" class="language">Burmese</li><li data-value="200" class="language">Central Khmer</li><li data-value="201" class="language">Chamorro</li><li data-value="202" class="language">Chechen</li><li data-value="203" class="language">Chinese</li><li data-value="204" class="language">Chuvash</li><li data-value="205" class="language">Cornish</li><li data-value="206" class="language">Corsican</li><li data-value="207" class="language">Cree</li><li data-value="208" class="language">Croatian</li><li data-value="209" class="language">Czech</li><li data-value="210" class="language">Danish</li><li data-value="212" class="language">Dutch</li><li data-value="213" class="language">Dzongkha</li><li data-value="214" class="language">English</li><li data-value="215" class="language">Esperanto</li><li data-value="216" class="language">Estonian</li><li data-value="217" class="language">Ewe</li><li data-value="218" class="language">Faroese</li><li data-value="219" class="language">Fijian</li><li data-value="220" class="language">Finnish</li><li data-value="221" class="language">French</li><li data-value="222" class="language">Fulah</li><li data-value="223" class="language">Galician</li><li data-value="224" class="language">Ganda</li><li data-value="225" class="language">Georgian</li><li data-value="226" class="language">German</li><li data-value="228" class="language">Greek</li><li data-value="229" class="language">Greenlandic</li><li data-value="230" class="language">Guarani</li><li data-value="231" class="language">Gujarati</li><li data-value="232" class="language">Haitian</li><li data-value="233" class="language">Hausa</li><li data-value="234" class="language">Hebrew</li><li data-value="235" class="language">Herero</li><li data-value="236" class="language">Hindi</li><li data-value="237" class="language">Hiri Motu</li><li data-value="238" class="language">Hungarian</li><li data-value="239" class="language">Icelandic</li><li data-value="240" class="language">Ido</li><li data-value="241" class="language">Igbo</li><li data-value="242" class="language">Indonesian</li><li data-value="243" class="language">Inuktitut</li><li data-value="244" class="language">Inupiaq</li><li data-value="245" class="language">Irish</li><li data-value="246" class="language">Italian</li><li data-value="247" class="language">Japanese</li><li data-value="248" class="language">Javanese</li><li data-value="249" class="language">Kannada</li><li data-value="250" class="language">Kanuri</li><li data-value="251" class="language">Kashmiri</li><li data-value="252" class="language">Kazakh</li><li data-value="227" class="language">Kikuyu</li><li data-value="253" class="language">Kinyarwanda</li><li data-value="254" class="language">Komi</li><li data-value="255" class="language">Kongo</li><li data-value="256" class="language">Korean</li><li data-value="258" class="language">Kurdish</li><li data-value="257" class="language">Kwanyama</li><li data-value="259" class="language">Kyrgyz</li><li data-value="260" class="language">Lao</li><li data-value="261" class="language">Latin</li><li data-value="262" class="language">Latvian</li><li data-value="264" class="language">Limburger</li><li data-value="265" class="language">Lingala</li><li data-value="266" class="language">Lithuanian</li><li data-value="267" class="language">Luba-Katanga</li><li data-value="263" class="language">Luxembourgish</li><li data-value="268" class="language">Macedonian</li><li data-value="269" class="language">Malagasy</li><li data-value="270" class="language">Malay</li><li data-value="271" class="language">Malayalam</li><li data-value="211" class="language">Maldivian</li><li data-value="272" class="language">Maltese</li><li data-value="273" class="language">Manx</li><li data-value="274" class="language">Maori</li><li data-value="275" class="language">Marathi</li><li data-value="276" class="language">Marshallese</li><li data-value="277" class="language">Moldavian</li><li data-value="278" class="language">Mongolian</li><li data-value="279" class="language">Nauru</li><li data-value="280" class="language">Navajo</li><li data-value="282" class="language">Ndonga</li><li data-value="283" class="language">Nepali</li><li data-value="281" class="language">Northern Ndebele</li><li data-value="284" class="language">Northern Sami</li><li data-value="285" class="language">Norwegian</li><li data-value="286" class="language">Norwegian Bokmål</li><li data-value="287" class="language">Norwegian Nynorsk</li><li data-value="288" class="language">Nuosu</li><li data-value="289" class="language">Ojibwa</li><li data-value="290" class="language">Oriya</li><li data-value="291" class="language">Oromo</li><li data-value="292" class="language">Ossetian</li><li data-value="293" class="language">Pali</li><li data-value="296" class="language">Persian</li><li data-value="297" class="language">Polish</li><li data-value="298" class="language">Portuguese</li><li data-value="294" class="language">Punjabi</li><li data-value="295" class="language">Pushto</li><li data-value="299" class="language">Quechua</li><li data-value="300" class="language">Romansh</li><li data-value="301" class="language">Rundi</li><li data-value="302" class="language">Russian</li><li data-value="303" class="language">Samoan</li><li data-value="304" class="language">Sango</li><li data-value="305" class="language">Sanskrit</li><li data-value="306" class="language">Sardinian</li><li data-value="307" class="language">Serbian</li><li data-value="308" class="language">Shona</li><li data-value="309" class="language">Sindhi</li><li data-value="310" class="language">Sinhalese</li><li data-value="311" class="language">Slovak</li><li data-value="312" class="language">Slovenian</li><li data-value="313" class="language">Somali</li><li data-value="314" class="language">Spanish</li><li data-value="315" class="language">Sundanese</li><li data-value="316" class="language">Swahili</li><li data-value="317" class="language">Swati</li><li data-value="318" class="language">Swedish</li><li data-value="319" class="language">Tagalog</li><li data-value="320" class="language">Tahitian</li><li data-value="321" class="language">Tajik</li><li data-value="322" class="language">Tamil</li><li data-value="323" class="language">Tatar</li><li data-value="324" class="language">Telugu</li><li data-value="325" class="language">Thai</li><li data-value="326" class="language">Tibetan</li><li data-value="327" class="language">Tigrinya</li><li data-value="328" class="language">Tsonga</li><li data-value="329" class="language">Tswana</li><li data-value="330" class="language">Turkish</li><li data-value="331" class="language">Turkmen</li><li data-value="332" class="language">Twi</li><li data-value="333" class="language">Uighur</li><li data-value="334" class="language">Ukrainian</li><li data-value="335" class="language">Urdu</li><li data-value="336" class="language">Uzbek</li><li data-value="199" class="language">Valencian</li><li data-value="337" class="language">Venda</li><li data-value="338" class="language">Vietnamese</li><li data-value="339" class="language">Walloon</li><li data-value="340" class="language">Welsh</li><li data-value="341" class="language">Wolof</li><li data-value="342" class="language">Xhosa</li><li data-value="343" class="language">Yiddish</li><li data-value="344" class="language">Yoruba</li><li data-value="345" class="language">Zhuang</li><li data-value="346" class="language">Zulu</li>
+                                    <li data-value="group_1" class="group">group 1</li>
+                                    <li data-value="group_2" class="group">group 2</li>
+                                    <li data-value="group_3" class="group">group 3</li>
+                                    <li data-value="group_4" class="group">group 4</li>
+                                    <li data-value="group_5" class="group">group 5</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="campaign_pop_up_create_new_campaign">
+                        <div class="campaign_pop_up_create_new_campaign_container">
+                            <div class="xs-fec">
+                                <button class="campaign_pop_up_create_new_campaign_container_close"><i class="fas fa-times"></i></button>
+                            </div>
+
+                            <div class="campaign_pop_up_create_new_campaign_inputs xs-fbt xs-fw">
+
+                                <div class="inputs_left">
+                                    <div class="campaign_pop_up_input_campaign_name">
+                                        <p>Campaign Name</p>
+                                        <input type="text" placeholder="Campaign Name">
+                                    </div>
+
+                                    <div class="campaign_pop_up_input_campaign_push_title">
+                                        <p>Push Title</p>
+                                        <input type="text" placeholder="Push Title">
+                                    </div>
+
+                                    <div class="campaign_pop_up_input_campaign_groups">
+                                        <p>Group</p>
+                                        <div class="custom-select campaign_pop_up_select">
+                                            <select>
+                                                <option value="undefined" selected>Select Group:</option>
+                                                <option value="Health">Aealth</option>
+                                                <option value="Beauty">Beauty</option>
+                                                <option value="Nutra">Cutra</option>
+                                                <option value="Nutra">Dutra</option>
+                                                <option value="Nutra">Eutra</option>
+                                                <option value="Nutra">Futra</option>
+                                                <option value="Nutra">Gutra</option>
+                                                <option value="Nutra">Hutra</option>
+                                                <option value="Nutra">Iutra</option>
+                                                <option value="Nutra">Jutra</option>
+                                                <option value="Nutra">Kutra</option>
+                                                <option value="Nutra">Lutra</option>
+                                                <option value="Nutra">Mutra</option>
+                                                <option value="Nutra">Nutra</option>
+                                                <option value="Nutra">Outra</option>
+                                                <option value="Nutra">Putra</option>
+                                                <option value="Nutra">Qutra</option>
+                                                <option value="Nutra">Rutra</option>
+                                                <option value="Nutra">Sutra</option>
+                                                <option value="Nutra">Tutra</option>
+                                                <option value="Nutra">Uutra</option>
+                                                <option value="Nutra">Vutra</option>
+                                                <option value="Nutra">Wutra</option>
+                                                <option value="Nutra">Xutra</option>
+                                                <option value="Nutra">Yutra</option>
+                                                <option value="Nutra">Zutra</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="campaign_pop_up_input_campaign_language">
+                                        <p>Language</p>
+                                        <div class="custom-select campaign_pop_up_select">
+                                            <select>
+                                                <option value="undefined" selected>Select Language:</option>
+                                                <option value="Health">Aealth</option>
+                                                <option value="Beauty">Beauty</option>
+                                                <option value="Nutra">Cutra</option>
+                                                <option value="Nutra">Dutra</option>
+                                                <option value="Nutra">Eutra</option>
+                                                <option value="Nutra">Futra</option>
+                                                <option value="Nutra">Gutra</option>
+                                                <option value="Nutra">Hutra</option>
+                                                <option value="Nutra">Iutra</option>
+                                                <option value="Nutra">Jutra</option>
+                                                <option value="Nutra">Kutra</option>
+                                                <option value="Nutra">Lutra</option>
+                                                <option value="Nutra">Mutra</option>
+                                                <option value="Nutra">Nutra</option>
+                                                <option value="Nutra">Outra</option>
+                                                <option value="Nutra">Putra</option>
+                                                <option value="Nutra">Qutra</option>
+                                                <option value="Nutra">Rutra</option>
+                                                <option value="Nutra">Sutra</option>
+                                                <option value="Nutra">Tutra</option>
+                                                <option value="Nutra">Uutra</option>
+                                                <option value="Nutra">Vutra</option>
+                                                <option value="Nutra">Wutra</option>
+                                                <option value="Nutra">Xutra</option>
+                                                <option value="Nutra">Yutra</option>
+                                                <option value="Nutra">Zutra</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="campaign_pop_up_input_campaign_target_link">
+                                        <p>Target Link</p>
+                                        <input type="text" placeholder="Target Link">
+                                    </div>
+
+                                    <div class="xs-fbs icon_and_badge">
+                                        <div class="campaign_pop_up_input_campaign_icon">
+                                            <p>Badge</p>
+                                            <div class="campaign_pop_up_input_campaign_icon_absolute">
+                                                <input type="file" placeholder="icon">
+                                                <div class="download_img">
+                                                    <img src="img/add.png" alt="">
+                                                </div>
+                                                <button class="clear_input_file"><i class="far fa-trash-alt"></i></button>
+                                                <div class="loader_dots active xs-fcc">
+                                                    <ul class="loader_dots_container">
+                                                        <li class="loader_dot dot_1"></li>
+                                                        <li class="loader_dot dot_2"></li>
+                                                        <li class="loader_dot dot_3"></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- here -->
+                                        <div class="campaign_pop_up_input_campaign_img">
+                                            <p>Icon</p>
+                                            <!-- <div id="croppic"> -->
+                                                <div id="cropContainerModal_152">
+                                                    <img class="croppedImg" src="" alt="" id="cropContainerModal_old_img_152" >
+                                                </div>
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="inputs_right">
+                                   
+                                    <div class="campaign_pop_up_input_campaign_img">
+                                        <p>Upload Your Photo</p>
+                                        <!-- <div id="croppic"> -->
+                                            <div id="cropContainerModal">
+                                                <img class="croppedImg" src="" alt="" id="cropContainerModal_old_img" >
+                                            </div>
+                                        <!-- </div> -->
+                                    </div>
+
+                                     <div class="campaign_pop_up_input_campaign_description">
+                                        <p class="xs-fbc">Push Description <span class="textarea_length">240</span></p>
+                                        <textarea placeholder="Push Description"></textarea>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="campaign_pop_up_save_button xs-fcc">
+                                    <button>Save</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- template to create new campaign ( table > ul ) -->
+                    <div class="template_to_create_new_campaign" style="display: none;">
+                        <ul class="campaigns_table_ul">
+                            <li data-id="4_1" class="name"><p>Name</p></li>
+                            <li data-id="4_2" class="photo"><img src="" alt=""></li>
+                            <li data-id="4_3" class="views"><p>0</p></li>
+                            <li data-id="4_4" class="clicks"><p>0</p></li>
+                            <li data-id="4_5" class="ctr"><p>0</p></li>
+                            <li data-id="4_6" class="leads"><p>0</p></li>
+                            <li data-id="4_7" class="language"><p value="undefinew">Lang</p></li>
+                            <li data-id="4_8" class="group"><p value="group">Group</p></li>
+                            <li data-id="4_9" class="edit"><i class="fas fa-ellipsis-v"></i>
+                                <ul>
+                                    <li>
+                                        <button class="campaigns_table_ul_edit">Edit</button>
+                                    </li>
+                                    <li>
+                                        <button class="campaigns_table_ul_dublicate">Dublicate</button>
+                                    </li>
+                                    <li>
+                                        <button class="campaigns_table_ul_delete">Delete</button>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </main>
+
+        <!-- main style -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-custom.css">
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/script.js"></script>
+
+        <!-- page -->
+        <link rel="stylesheet" href="css/work_space/campaigns.css">
+        <script src="js/campaigns.js"></script>
+
+        <!-- pluggins -->
+        <!-- custom select -->
+        <link rel="stylesheet" href="pluggins/custom_select/custom_select.css">
+        <script src="pluggins/custom_select/custom_select.js"></script>
+        <!-- croppic -->
+        <link rel="stylesheet" href="pluggins/croppic/croppic.css">
+        <script src="pluggins/croppic/jquery.mousewheel.min.js"></script>
+        <script src="pluggins/croppic/croppic.js"></script>
+        <script src="pluggins/croppic/croppic_settings.js"></script>
+
+        <!-- filter search -->
+        <script src="js/search_in_filter.js"></script>
+
+    </div>
+</body>
+
+</html>

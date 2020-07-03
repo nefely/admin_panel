@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Settings | Users | Omnia Push</title>
+    <meta name="theme-color" content="#383838" />
+</head>
+
+<body>
+    <div class="body_wrapper xs-fbs">
+        <nav>
+            <div class="nav_scroll_container">
+                <div class="nav_navigation">
+
+                    <div class="nav_logo">
+                        <a href="#" class="xs-fcc">
+                            <img src="/img/logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="nav_menu">
+                        <ul>
+                            <li>
+                                <a href="/">
+                                    <p>
+                                        <i class="fas fa-chart-bar"></i>
+                                        <span>Dashboard</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/audience.html">
+                                    <p>
+                                        <i class="fas fa-comment-dots"></i>
+                                        <span>Audience</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/campaigns.html">
+                                    <p>
+                                        <i class="fas fa-briefcase"></i>
+                                        <span>Campaigns</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/sequences">
+                                    <p>
+                                        <i class="fas fa-vector-square"></i>
+                                        <span>Sequences</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="current_page_is_active">
+                                <a href="/settings.html">
+                                    <p>
+                                        <i class="fas fa-cog"></i>
+                                        <span>Settings</span>
+                                    </p>
+                                    <i class="fas fa-sort-down"></i>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="/settings/users.html">
+                                            <p>
+                                                <i class="fas fa-circle"></i>
+                                                <span>Users</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/settings/traffic-sources.html">
+                                            <p>
+                                                <i class="fas fa-circle"></i>
+                                                <span>Traffic Sources</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/settings/categories.html">
+                                            <p>
+                                                <i class="fas fa-circle"></i>
+                                                <span>Categories</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/settings/tags.html">
+                                            <p>
+                                                <i class="fas fa-circle"></i>
+                                                <span>Tags</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/generate_link.html">
+                                    <p>
+                                        <i class="fas fa-link"></i>
+                                        <span>Generate Link</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="nav_logout">
+                    <ul>
+                        <li class="xs-fbc">
+                            <div class="xs-fsc">
+                                <img src="/img/user.png" alt="">
+                                <p>Emil Walter</p>
+                            </div>
+                            <a href="#">
+                                <i class="fas fa-sign-out-alt"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="main_scroll_container">
+
+                <div class="main_cramps xs-fsc">
+                    <h4><a href="#">Settings</a></h4>
+                    <p><a href="#">Users</a></p>
+                </div>
+
+                <div class="main_work_space">
+
+                    <div class="settings_user_work_space xs-fss">
+
+                        <div class="settings_user_navigation">
+                            <ul>
+                                <li class="current_page_is_active">
+                                    <a href="/settings/users.html">
+                                        <p>
+                                            <span>Users</span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/settings/traffic-sources.html">
+                                        <p>
+                                            <span>Traffic Sources</span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/settings/categories.html">
+                                        <p>
+                                            <span>Categories</span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/settings/tags.html">
+                                        <p>
+                                            <span>Tags</span>
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> <!-- settings_navigation -->
+
+                        <div class="settings_user_content">
+                            <div class="settings_user_content_add_something xs-fec">
+                                <button class="settings_user_content_add_user">Create New User</button>
+                            </div>
+
+                            <div class="table_container">
+                                <div class="settings_user_table">
+                                    <ul class="settings_user_table_head">
+                                        <li>User 
+                                            <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div>
+                                        </li>
+                                        <li>Role 
+                                            <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div>
+                                        </li>
+                                        <li></li>
+                                    </ul>
+                                    <div class="settings_user_table_body">
+                                        <ul class="settings_user_table_ul" data-key="1">
+                                            <li data-id="1">
+                                                <p class="settings_user_user_name" value="RY">Roman Yatsuk</p>
+                                            </li>
+                                            <li>
+                                                <p class="settings_user_user_role" value="admin">admin</p>
+                                            </li>
+                                            <li class="edit"><i class="fas fa-ellipsis-v"></i>
+                                                <ul>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_edit">Edit</button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_dublicate">Dublicate</button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_delete">Delete</button>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="settings_user_table_ul" data-key="2">
+                                            <li data-id="1">
+                                                <p class="settings_user_user_name" value="MB">Maks Bilobran</p>
+                                            </li>
+                                            <li>
+                                                <p class="settings_user_user_role" value="user">user</p>
+                                            </li>
+                                            <li class="edit"><i class="fas fa-ellipsis-v"></i>
+                                                <ul>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_edit">Edit</button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_dublicate">Dublicate</button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_delete">Delete</button>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="settings_user_table_ul" data-key="3">
+                                            <li data-id="1">
+                                                <p class="settings_user_user_name" value="NS">Nazar Stepanyuk</p>
+                                            </li>
+                                            <li>
+                                                <p class="settings_user_user_role" value="user">user</p>
+                                            </li>
+                                            <li class="edit"><i class="fas fa-ellipsis-v"></i>
+                                                <ul>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_edit">Edit</button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_dublicate">Dublicate</button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_delete">Delete</button>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div> <!-- table_container -->
+                        </div> <!-- settings_user_content -->
+
+
+
+                        <!-- edit block -->
+                        <div class="settings_user_edit_content">
+                            <div class="settings_user_edit_content_top xs-fbc">
+                                <h6>Main Option</h6>
+                                <div class="settings_user_edit_content_close">
+                                    <button><i class="fas fa-times"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="settings_user_edit_content_main">
+                                <div class="settings_user_edit_content_main_name">
+                                    <p>Name</p>
+                                    <input type="text" placeholder="Name">
+                                </div>
+                                <div class="settings_user_edit_content_main_password">
+                                    <p>Password</p>
+                                    <input type="password" placeholder="Password">
+                                </div>
+                                <div class="settings_user_edit_content_main_role">
+                                    <p>Group</p>
+                                    <div class="custom-select settings_user_edit_content-select">
+                                        <select>
+                                            <option value="undefined">Select Category:</option>
+                                            <option value="admin">Admin</option>
+                                            <option value="user">User</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="settings_user_edit_content_tabs">
+                                <div class="settings_user_edit_content_tabs_title">
+                                    <h6>Permissions</h6>
+                                </div>
+                                <div class="settings_user_edit_content_tabs_triger">
+                                    <ul class="xs-fbc">
+                                        <li class="active" id="campaigns"><button>Campaigns</button></li>
+                                        <li id="sequences"><button>Sequences</button></li>
+                                        <li id="categories"><button>Categories</button></li>
+                                        <li id="traffic_sources"><button>Traffic Sources</button></li>
+                                    </ul>
+                                </div>
+                                <div class="settings_user_edit_content_tabs_block">
+                                    <ul>
+                                        <!-- campaigs list permission -->
+                                        <li class="active" id="campaigns">
+                                            <div class="filter_active campaigns_filter">
+                                                <ul>
+                                                    <li class="filter_template">
+                                                        <p></p>
+                                                        <button class="permission_delete">delete</button>
+                                                    </li>
+                                                    
+                                                    <li class="filter_none">
+                                                        <p>None</p>
+                                                    </li>
+                                                    <li class="filter_all_campaigns">
+                                                        <p>All Campaigns</p>
+                                                        <button class="permission_delete">delete</button>
+                                                    </li>
+                                                    <li class="filter_all_groups">
+                                                        <p>All Groups</p>
+                                                        <button class="permission_delete">delete</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="filter_button campaigns_filter_btn xs-fcc">
+                                                <button class="add_campaigns">+ Campaigns</button>
+                                                <button class="add_groups">+ Groups</button>
+                                                <button class="add_all_groups">+ All</button>
+                                            </div>
+                                        </li> <!-- campaigs list permission -->
+
+                                        <li class="" id="sequences">
+                                            <div class="filter_active sequences_filter">
+                                                <ul>
+                                                    <li class="filter_template">
+                                                        <p></p>
+                                                        <button class="permission_delete">delete</button>
+                                                    </li>
+                                                    
+                                                    <li class="filter_none">
+                                                        <p>None</p>
+                                                    </li>
+
+                                                    <li class="filter_all_sequences">
+                                                        <p>All Sequences</p>
+                                                        <button class="permission_delete">delete</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="filter_button sequences_filter_btn xs-fcc">
+                                                <button class="add_sequences">+ Sequences</button>
+                                                <button class="add_all_sequences">+ All</button>
+                                            </div>
+                                        </li>
+
+                                        <li class="" id="categories">
+                                            <div class="filter_active category_filter">
+                                                <ul>
+                                                    <li class="filter_template">
+                                                        <p></p>
+                                                        <button class="permission_delete">delete</button>
+                                                    </li>
+                                                    
+                                                    <li class="filter_none">
+                                                        <p>None</p>
+                                                    </li>
+
+                                                    <li class="filter_all_categories">
+                                                        <p>All Categories</p>
+                                                        <button class="permission_delete">delete</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="filter_button category_filter_btn xs-fcc">
+                                                <button class="add_categories">+ Categories</button>
+                                                <button class="add_all_categories">+ All</button>
+                                            </div>
+                                        </li>
+
+                                        <li class="" id="traffic_sources">
+                                            <div class="filter_active traffic_filter">
+                                                <ul>
+                                                    <li class="filter_template">
+                                                        <p></p>
+                                                        <button class="permission_delete">delete</button>
+                                                    </li>
+                                                    
+                                                    <li class="filter_none">
+                                                        <p>None</p>
+                                                    </li>
+
+                                                    <li class="filter_all_traffic">
+                                                        <p>All Traffic Sources</p>
+                                                        <button class="permission_delete">delete</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="filter_button traffic_filter_btn xs-fcc">
+                                                <button class="add_traffics">+ Traffic Sources</button>
+                                                <button class="add_all_traffics">+ All</button>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="settings_user_edit_content_save_button">
+                                <button>Save</button>
+                            </div>
+                        </div> <!-- settings_user_edit_content -->
+
+
+                    </div> <!-- settings_user_work_space -->
+
+                </div> <!-- main_work_space -->
+            </div> <!-- main_scroll_container -->
+        </main>
+
+        <!-- pop up -->
+        <div class="settings_users_pop_up_container">
+            <div class="settings_users_pop_up settings_users_pop_up_large filter_campaign">
+                <div class="settings_users_pop_up_top xs-fbs">
+                    <div class="campaigns_filter_container">
+                        <div class="xs-fsc">
+                            <div class="campaigns_filter">
+                                <button>
+                                    <i class="fas fa-filter"></i>
+                                    <p>Filter</p>
+                                </button>
+                            </div>
+                            <div class="settings_users_pop_up_top_search xs-fcc">
+                                <button>
+                                    <i class="fas fa-search"></i>
+                                </button>
+                                <input type="text" placeholder="Search">
+                            </div>
+                        </div>
+
+                        <div class="xs-fbs xs-fw">
+                            <div class="campaign_filters_condition xs-fsc xs-fw">
+                                
+                                <!-- solo filter block -->
+                                <div class="campaign_add_condition xs-fsc">
+                                    <button class="campaign_add_condition_button">+ <span> Condition</span></button>
+                                    <ul class="campaign_add_condition_dropdown">
+                                        <li class="language">
+                                            <p data-value="language">Language</p>
+                                            <ul>
+                                                <li data-value="ua" class="language">ua</li>
+                                                <li data-value="ru" class="language">ru</li>
+                                                <li data-value="en" class="language">en</li>
+                                                <li data-value="de" class="language">de</li>
+                                                <li data-value="pl" class="language">pl</li>
+                                            </ul>
+                                        </li>
+                                        <li class="group">
+                                            <p data-value="group">Group</p>
+                                            <ul>
+                                                <li data-value="group_1" class="group">group 1</li>
+                                                <li data-value="group_2" class="group">group 2</li>
+                                                <li data-value="group_3" class="group">group 3</li>
+                                                <li data-value="group_4" class="group">group 4</li>
+                                                <li data-value="group_5" class="group">group 5</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="settings_users_pop_up_top_close">
+                        <button><i class="fas fa-times"></i></button>
+                    </div>  
+
+                </div>
+                <div class="settings_users_pop_up_table">
+                    <div class="settings_users_pop_up_table_head">
+                        <ul class="xs-fbc">
+                            <li>Name <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div></li>
+                            <li>Photo <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div></li>
+                            <li>Views <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div></li>
+                            <li>Clicks <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div></li>
+                            <li>CTR <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div></li>
+                            <li>Leads <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div></li>
+                            <li>Lang<div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div></li>
+                            <li>Group <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="settings_users_pop_up_table_body">
+                        <ul class="xs-fbc" data-key="1" data-group="group_2" data-language="ua">
+                            <li data-id="1_1" class="name"><p>nutra</p></li>
+                            <li data-id="1_2" class="photo"><img src="/img/campaigns_pop_up_bg.png" alt=""></li>
+                            <li data-id="1_3" class="views"><p>3543</p></li>
+                            <li data-id="1_4" class="clicks"><p>1,2341</p></li>
+                            <li data-id="1_5" class="ctr"><p>0.53%</p></li>
+                            <li data-id="1_6" class="leads"><p>123</p></li>
+                            <li data-id="1_7" class="language"><p lang-value="ua">UA</p></li>
+                            <li data-id="1_8" class="group"><p group-value="group_2">group 2</p></li>
+                            <li>
+                                <p><i class="fas fa-check"></i><input type="checkbox"></p>
+                            </li>
+                        </ul>
+                        <ul class="xs-fbc" data-key="2" data-group="group_1" data-language="ru">
+                            <li data-id="1_1" class="name"><p>dating</p></li>
+                            <li data-id="1_2" class="photo"><img src="/img/campaigns_pop_up_bg.png" alt=""></li>
+                            <li data-id="1_3" class="views"><p>3543</p></li>
+                            <li data-id="1_4" class="clicks"><p>1,2341</p></li>
+                            <li data-id="1_5" class="ctr"><p>0.53%</p></li>
+                            <li data-id="1_6" class="leads"><p>123</p></li>
+                            <li data-id="1_7" class="language"><p lang-value="ru">RU</p></li>
+                            <li data-id="1_8" class="group"><p group-value="group_1">group 1</p></li>
+                            <li>
+                                <p><i class="fas fa-check"></i><input type="checkbox" checked></p>
+                            </li>
+                        </ul>
+
+                        <ul class="xs-fbc" data-key="3" data-group="group_5" data-language="ru">
+                            <li data-id="1_1" class="name"><p>valentime</p></li>
+                            <li data-id="1_2" class="photo"><img src="/img/campaigns_pop_up_bg.png" alt=""></li>
+                            <li data-id="1_3" class="views"><p>3543</p></li>
+                            <li data-id="1_4" class="clicks"><p>1,2341</p></li>
+                            <li data-id="1_5" class="ctr"><p>0.53%</p></li>
+                            <li data-id="1_6" class="leads"><p>123</p></li>
+                            <li data-id="1_7" class="language"><p lang-value="ru">RU</p></li>
+                            <li data-id="1_8" class="group"><p group-value="group_5">group 5</p></li>
+                            <li>
+                                <p><i class="fas fa-check"></i><input type="checkbox" checked></p>
+                            </li>
+                        </ul>
+
+                        <ul class="xs-fbc" data-key="4" data-group="group_3" data-language="de">
+                            <li data-id="1_1" class="name"><p>diamond</p></li>
+                            <li data-id="1_2" class="photo"><img src="/img/campaigns_pop_up_bg.png" alt=""></li>
+                            <li data-id="1_3" class="views"><p>3543</p></li>
+                            <li data-id="1_4" class="clicks"><p>1,2341</p></li>
+                            <li data-id="1_5" class="ctr"><p>0.53%</p></li>
+                            <li data-id="1_6" class="leads"><p>123</p></li>
+                            <li data-id="1_7" class="language"><p lang-value="de">DE</p></li>
+                            <li data-id="1_8" class="group"><p group-value="group_3">group 3</p></li>
+                            <li>
+                                <p><i class="fas fa-check"></i><input type="checkbox"></p>
+                            </li>
+                        </ul>
+
+                         <ul class="xs-fbc" data-key="5" data-group="group_2" data-language="ua"> 
+                            <li data-id="1_1" class="name"><p>Love Cupid</p></li>
+                            <li data-id="1_2" class="photo"><img src="/img/campaigns_pop_up_bg.png" alt=""></li>
+                            <li data-id="1_3" class="views"><p>3543</p></li>
+                            <li data-id="1_4" class="clicks"><p>1,2341</p></li>
+                            <li data-id="1_5" class="ctr"><p>0.53%</p></li>
+                            <li data-id="1_6" class="leads"><p>123</p></li>
+                            <li data-id="1_7" class="language"><p lang-value="ua">UA</p></li>
+                            <li data-id="1_8" class="group"><p group-value="group_2">group 2</p></li>
+                            <li>
+                                <p><i class="fas fa-check"></i><input type="checkbox" checked></p>
+                            </li>
+                        </ul>
+
+                        <ul class="xs-fbc" data-key="6" data-group="group_3" data-language="ua">
+                            <li data-id="1_1" class="name"><p>Nutra</p></li>
+                            <li data-id="1_2" class="photo"><img src="/img/campaigns_pop_up_bg.png" alt=""></li>
+                            <li data-id="1_3" class="views"><p>3543</p></li>
+                            <li data-id="1_4" class="clicks"><p>1,2341</p></li>
+                            <li data-id="1_5" class="ctr"><p>0.53%</p></li>
+                            <li data-id="1_6" class="leads"><p>123</p></li>
+                            <li data-id="1_7" class="language"><p lang-value="ua">UA</p></li>
+                            <li data-id="1_8" class="group"><p group-value="group_3">group 3</p></li>
+                            <li>
+                                <p><i class="fas fa-check"></i><input type="checkbox"></p>
+                            </li>
+                        </ul>
+
+                        <ul class="xs-fbc" data-key="7" data-group="group_1" data-language="pl">
+                            <li data-id="1_1" class="name"><p>NONAME</p></li>
+                            <li data-id="1_2" class="photo"><img src="/img/campaigns_pop_up_bg.png" alt=""></li>
+                            <li data-id="1_3" class="views"><p>3543</p></li>
+                            <li data-id="1_4" class="clicks"><p>1,2341</p></li>
+                            <li data-id="1_5" class="ctr"><p>0.53%</p></li>
+                            <li data-id="1_6" class="leads"><p>123</p></li>
+                            <li data-id="1_7" class="language"><p lang-value="pl">PL</p></li>
+                            <li data-id="1_8" class="group"><p group-value="group_1">group 1</p></li>
+                            <li>
+                                <p><i class="fas fa-check"></i><input type="checkbox"></p>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="settings_users_pop_up_table_btn_add">
+                    <button class="filter_campaign">add</button>
+                </div>
+            </div>
+
+            <div class="settings_users_pop_up settings_users_pop_up_standart filter_group">
+                <div class="settings_users_pop_up_top xs-fbc">
+                    <div class="settings_users_pop_up_top_search xs-fsc">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search Group">   
+                    </div>
+                    <div class="settings_users_pop_up_top_close">
+                        <button><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+                <div class="settings_users_pop_up_table">
+                    <div class="settings_users_pop_up_table_head">
+                        <ul class="xs-fbc">
+                            <li>
+                                <p>Name</p>
+                            </li>
+                            <li>
+                                <p>Select</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="settings_users_pop_up_table_body">
+                        <ul class="xs-fbc" data-key="1">
+                            <li>
+                                <p group-value="group_1">group 1</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-check"></i><input type="checkbox" checked></p>
+                            </li>
+                        </ul>
+                        <ul class="xs-fbc" data-key="2">
+                            <li>
+                                <p group-value="group_2">group 2</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-check"></i><input type="checkbox" checked></p>
+                            </li>
+                        </ul>
+                        <ul class="xs-fbc" data-key="3">
+                            <li>
+                                <p group-value="group_3">group 3</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-check"></i><input type="checkbox"></p>
+                            </li>
+                        </ul>
+                        <ul class="xs-fbc" data-key="4">
+                            <li>
+                                <p group-value="group_4">group 4</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-check"></i><input type="checkbox"></p>
+                            </li>
+                        </ul>
+                        <ul class="xs-fbc" data-key="44">
+                            <li>
+                                <p group-value="group_44">group 44</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-check"></i><input type="checkbox"></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="settings_users_pop_up_table_btn_add">
+                    <button class="filter_group">add</button>
+                </div>
+            </div>
+
+            <div class="settings_users_pop_up settings_users_pop_up_standart filter_sequences">
+                <div class="settings_users_pop_up_top xs-fbc">
+                    <div class="settings_users_pop_up_top_search xs-fsc">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search Sequences">   
+                    </div>
+                    <div class="settings_users_pop_up_top_close">
+                        <button><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+                <div class="settings_users_pop_up_table">
+                    <div class="settings_users_pop_up_table_head">
+                        <ul class="xs-fbc">
+                            <li>
+                                <p>Name</p>
+                            </li>
+                            <li>
+                                <p>Select</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="settings_users_pop_up_table_body">
+                        <ul class="xs-fbc" data-key="1">
+                            <li>
+                                <p data-value="sequence_1">sequence 1</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-check"></i><input type="checkbox" checked></p>
+                            </li>
+                        </ul>
+                        <ul class="xs-fbc" data-key="2">
+                            <li>
+                                <p data-value="sequence_2">sequence 2</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-check"></i><input type="checkbox" checked></p>
+                            </li>
+                        </ul>
+                        <ul class="xs-fbc" data-key="3">
+                            <li>
+                                <p data-value="sequence_3">sequence 3</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-check"></i><input type="checkbox"></p>
+                            </li>
+                        </ul>
+                        <ul class="xs-fbc" data-key="4">
+                            <li>
+                                <p data-value="sequence_4">sequence 4</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-check"></i><input type="checkbox"></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="settings_users_pop_up_table_btn_add">
+                    <button class="filter_sequences">add</button>
+                </div>
+            </div>
+
+            <div class="settings_users_pop_up settings_users_pop_up_standart filter_category">
+                <div class="settings_users_pop_up_top xs-fbc">
+                    <div class="settings_users_pop_up_top_search xs-fsc">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search Categories">   
+                    </div>
+                    <div class="settings_users_pop_up_top_close">
+                        <button><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+                <div class="settings_users_pop_up_table">
+                    <div class="settings_users_pop_up_table_head">
+                        <ul class="xs-fbc">
+                            <li>
+                                <p>Name</p>
+                            </li>
+                            <li>
+                                <p>Select</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="settings_users_pop_up_table_body">
+                        <ul class="xs-fbc" data-key="1">
+                            <li>
+                                <p data-value="categories_1">categories 1</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-check"></i><input type="checkbox" checked></p>
+                            </li>
+                        </ul>
+                        <ul class="xs-fbc" data-key="2">
+                            <li>
+                                <p data-value="categories_2">categories 2</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-check"></i><input type="checkbox" checked></p>
+                            </li>
+                        </ul>
+                        <ul class="xs-fbc" data-key="3"> 
+                            <li>
+                                <p data-value="categories_3">categories 3</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-check"></i><input type="checkbox" checked></p>
+                            </li>
+                        </ul>
+                        <ul class="xs-fbc" data-key="4">
+                            <li>
+                                <p data-value="categories_4">categories 4</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-check"></i><input type="checkbox" checked></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="settings_users_pop_up_table_btn_add">
+                    <button class="filter_category">add</button>
+                </div>
+            </div>
+
+            <div class="settings_users_pop_up settings_users_pop_up_standart filter_traffic">
+                <div class="settings_users_pop_up_top xs-fbc">
+                    <div class="settings_users_pop_up_top_search xs-fsc">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search Traffic Source">   
+                    </div>
+                    <div class="settings_users_pop_up_top_close">
+                        <button><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+                <div class="settings_users_pop_up_table">
+                    <div class="settings_users_pop_up_table_head">
+                        <ul class="xs-fbc">
+                            <li>
+                                <p>Name</p>
+                            </li>
+                            <li>
+                                <p>Select</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="settings_users_pop_up_table_body">
+                         <ul class="xs-fbc" data-key="1">
+                            <li>
+                                <p data-value="fb">Fb</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-check"></i><input type="checkbox"></p>
+                            </li>
+                        </ul>
+                        <ul class="xs-fbc" data-key="2">
+                            <li>
+                                <p data-value="google">Google</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-check"></i><input type="checkbox" checked></p>
+                            </li>
+                        </ul>
+                        <ul class="xs-fbc" data-key="3">
+                            <li>
+                                <p data-value="instagram">Instagram</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-check"></i><input type="checkbox" checked></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="settings_users_pop_up_table_btn_add">
+                    <button class="filter_traffic">add</button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="add_new_condition_block_script" style="display: none;">
+            <div class="campaign_filter_condition_container">
+                <div class="campaign_filter_condition_container_close">
+                    <button><i class="fas fa-times"></i></button>
+                </div>
+                <div class="group_filter">
+                    <p class="group_filter_value">Filter by</p>
+                    <ul class="">
+                        <li data-value="language" class="language">Language</li>
+                        <li data-value="group" class="group">Group</li>
+                    </ul>
+                </div>
+                <div class="div_separator"></div> 
+                <div class="sub_group_filter">
+                    <p class="sub_group_value">Value</p>
+                    <ul class="">
+                        <li data-value="ua" class="language">ua</li>
+                        <li data-value="ru" class="language">ru</li>
+                        <li data-value="en" class="language">en</li>
+                        <li data-value="de" class="language">de</li>
+                        <li data-value="pl" class="language">pl</li>
+                        <li data-value="group_1" class="group">group 1</li>
+                        <li data-value="group_2" class="group">group 2</li>
+                        <li data-value="group_3" class="group">group 3</li>
+                        <li data-value="group_4" class="group">group 4</li>
+                        <li data-value="group_5" class="group">group 5</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- main style -->
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/style-custom.css">
+        <script src="/js/jquery-3.1.1.min.js"></script>
+        <script src="/js/script.js"></script>
+
+        <!-- page -->
+        <link rel="stylesheet" href="/css/work_space/settings_users.css">
+        <script src="/js/settings_users.js"></script>
+
+        <!-- pluggins -->
+        <!-- custom select -->
+        <link rel="stylesheet" href="/pluggins/custom_select/custom_select.css">
+        <script src="/pluggins/custom_select/custom_select.js"></script>
+
+        <!-- filter search -->
+        <script src="../js/search_in_filter.js"></script>
+    </div>
+</body>
+
+</html>

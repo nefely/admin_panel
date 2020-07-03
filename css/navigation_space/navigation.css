@@ -1,0 +1,157 @@
+nav {
+	display: block;
+	width: 250px;
+	background: #41376d;
+	background: -moz-linear-gradient(top, #41376d 0%, #41376d 50%, #2f2d37 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, #41376d), color-stop(50%, #41376d), color-stop(100%, #2f2d37));
+	background: -webkit-linear-gradient(top, #41376d 0%, #41376d 50%, #2f2d37 100%);
+	background: -o-linear-gradient(top, #41376d 0%, #41376d 50%, #2f2d37 100%);
+	background: -ms-linear-gradient(top, #41376d 0%, #41376d 50%, #2f2d37 100%);
+	background: linear-gradient(to bottom, #41376d 0%, #41376d 50%, #2f2d37 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41376d', endColorstr='#2f2d37', GradientType=0 );
+}
+.nav_scroll_container {
+	height: 100vh;
+	width: 100%;
+	overflow:auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+.nav_scroll_container > div {
+	width: 100%;
+}
+
+/* logo */
+.nav_logo a {
+	width: 100%;
+	height: 75px;
+	border-bottom: 2px solid rgba(255,255,255,0.7);
+}
+.nav_logo img {
+	width: 80px;
+	height: auto;
+}
+
+/* navigation */
+.nav_menu{
+	margin-top: 40px;
+}
+
+.nav_menu ul li {
+	background: rgba(255,255,255,0);
+	-webkit-transition:all .3s ease-in-out;
+	-o-transition:all .3s ease-in-out;
+	transition:all .3s ease-in-out
+}
+.nav_menu ul li:hover {
+	background: rgba(255,255,255, 0.15);
+}
+.nav_menu ul li a {
+	color: var(--w);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.nav_menu ul li a p {
+	width: 100%;
+	height: 45px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0 0 0 10px;
+	border-left: 0px solid var(--w);
+	-webkit-transition:all .3s ease-in-out;
+	-o-transition:all .3s ease-in-out;
+	transition:all .3s ease-in-out
+}
+.nav_menu ul li a > i {
+	min-width: 35px;
+	padding-bottom: 7px;
+	transform: rotate(-180deg);
+	-webkit-transition:all .3s ease-in-out;
+	-o-transition:all .3s ease-in-out;
+	transition:all .3s ease-in-out
+}
+.nav_menu ul li:hover a > i {
+	transform: rotate(0deg);
+}
+.nav_menu ul li.current_page_is_active a p,
+.nav_menu ul li a p:hover {
+	border-left: 5px solid var(--w);
+}
+.nav_menu ul li a i {
+	width: 35px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2em;
+	margin-right: 10px;
+}
+.nav_menu ul li ul a i {
+	font-size: 0.4em;
+	line-height: 0.4em;
+	margin-right: 10px;
+	margin-left: 45px;
+	height: 10px;
+	width: 10px;
+}
+
+.nav_menu ul li ul li a p {
+	height: 0;
+	overflow:hidden;
+}
+.nav_menu ul li:hover ul li a p{
+	height: 45px;
+}
+
+.nav_menu ul li ul li a p i,
+.nav_menu ul li ul li a p span {
+	opacity: 0;
+	transform: translate(0, -200px);
+	-webkit-transition:all .3s ease-in-out !important;
+	-o-transition:all .3s ease-in-out !important;
+	transition:all .3s ease-in-out !important
+}
+.nav_menu ul li:hover ul li a p i,
+.nav_menu ul li:hover ul li a p span {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+/* log out */ 
+.nav_logout {
+	margin-bottom: 40px;
+}
+.nav_logout ul li {
+	width: 100%;
+	height: 45px;
+	padding: 0 20px;
+	color: var(--w);
+}
+.nav_logout ul li > div > img {
+	width: 35px;
+	height: 35px;
+	margin-right: 10px;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: center;
+}
+.nav_logout ul li a i{
+	color: var(--w);
+	width: 35px;
+	height: 35px;
+	font-size: 1.2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-transition:all .3s ease-in-out;
+	-o-transition:all .3s ease-in-out;
+	transition:all .3s ease-in-out;
+}
+.nav_logout ul li a:hover i{
+	color: var(--r);
+}
+

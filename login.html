@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Login | Omnia Push</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    </head>
+    <body>
+    <div class="body_wrapper xs-fbs">
+        <div class="login_wrapper xs-fcc">
+            <div class="login_form">
+                <div>
+                    <div>
+                        <img src="/img/logo.png" alt="">
+                    </div>
+                </div>
+                <!--<p>Lorem ipsum dolor sit amet, consect adipiscing unde elit.</p>-->
+                <form action="/login_check" method="post" >
+                    <input type="hidden" name="_csrf_token" value="UgP6bZu7QD0Jz8Bjn0Vh55vWXznHUqPUkkTlUpLT9bk" />
+                    <p><label for="username">Login</label></p>
+                    <input placeholder="Name / Email" type="text" id="username" name="_username" value="" required="required" />
+                    <p><label for="password">Password</label></p>
+                    <input placeholder="**********" type="password" id="password" name="_password" required="required" />
+                    <div style="display: none">
+                        <input type="checkbox" id="remember_me" name="_remember_me" value="on" checked/>
+                        <label for="remember_me">Remember me</label>
+                    </div>
+                    <div class="xs-fbc xs-fw">
+                        <button id="_submit" name="_submit" type="submit" disabled>Login</button>
+                        <a href="#">Forgot Your Password ?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- main style -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style-custom.css">
+    <!-- end -->
+        
+    <link rel="stylesheet" href="/css/login.css">
+    <!-- main js -->
+    <script src="/js/jquery-3.1.1.min.js"></script>
+    <script src="/js/script.js"></script>
+    <!-- end -->
+        
+    <script src="/js/login.js"></script>
+    
+</body>
+</html>

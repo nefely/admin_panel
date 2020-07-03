@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Sequence | Omnia Push</title>
+    <meta name="theme-color" content="#383838" />
+</head>
+
+<body>
+    <div class="body_wrapper xs-fbs">
+        <nav>
+            <div class="nav_scroll_container">
+                <div class="nav_navigation">
+
+                    <div class="nav_logo">
+                        <a href="#" class="xs-fcc">
+                            <img src="/img/logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="nav_menu">
+                        <ul>
+                            <li>
+                                <a href="/">
+                                    <p>
+                                        <i class="fas fa-chart-bar"></i>
+                                        <span>Dashboard</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/audience.html">
+                                    <p>
+                                        <i class="fas fa-comment-dots"></i>
+                                        <span>Audience</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/campaigns.html">
+                                    <p>
+                                        <i class="fas fa-briefcase"></i>
+                                        <span>Campaigns</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="current_page_is_active">
+                                <a href="/sequences">
+                                    <p>
+                                        <i class="fas fa-vector-square"></i>
+                                        <span>Sequences</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/settings.html">
+                                    <p>
+                                        <i class="fas fa-cog"></i>
+                                        <span>Settings</span>
+                                    </p>
+                                    <i class="fas fa-sort-down"></i>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="/settings/users.html">
+                                            <p>
+                                                <i class="fas fa-circle"></i>
+                                                <span>Users</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/settings/traffic-sources.html">
+                                            <p>
+                                                <i class="fas fa-circle"></i>
+                                                <span>Traffic Sources</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/settings/categories.html">
+                                            <p>
+                                                <i class="fas fa-circle"></i>
+                                                <span>Categories</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/settings/tags.html">
+                                            <p>
+                                                <i class="fas fa-circle"></i>
+                                                <span>Tags</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/generate_link.html">
+                                    <p>
+                                        <i class="fas fa-link"></i>
+                                        <span>Generate Link</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="nav_logout">
+                    <ul>
+                        <li class="xs-fbc">
+                            <div class="xs-fsc">
+                                <img src="/img/user.png" alt="">
+                                <p>Emil Walter</p>
+                            </div>
+                            <a href="#">
+                                <i class="fas fa-sign-out-alt"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="main_scroll_container">
+                
+                <!-- top work space navigation -->
+                <div class="main_cramps xs-fbc">
+                    <div class="main_cramps_left xs-fcc">
+                        <h4><a href="/sequences">Sequences</a></h4>
+                        <!-- <p><a href="" disabled>Folder 1</a></p>
+                        <p><a href="" disabled>Folder 1.2</a></p> -->
+                        <!-- тут -->
+                        <div class="breadcrumbs_input">
+                            <input type="text" placeholder="Sequence Name" value="">
+                            <button class="save"><i class="fas fa-save"></i></button>
+                        </div>
+                        <!--   -->
+                    </div>
+
+                    <!-- <div class="settings_user_content_add_something sequence_block xs-fec"></div> -->
+
+                    <div class="settings_user_content_add_something sequence_edit_block work_space_active xs-fec ">
+                        <button class="choose">Choose<i class="far fa-check-circle"></i></button>
+                        <button class="create">Create<i class="far fa-plus-square"></i></button>
+                        <button class="setting">Settings<i class="fas fa-cogs"></i></i></button>
+                        <button class="publish">Publish<i class="fas fa-save"></i></button>
+                    </div>
+
+                    <div class="settings_user_content_add_something sequence_settings_block xs-fec">
+                        <button class="back"><i class="fas fa-long-arrow-alt-left"></i>Back to Flow</button>
+                    </div>
+                </div>
+
+                <!-- edit space -->
+                <div class="main_work_space sequence_block work_space_active"><!-- sequence_block -->
+                <div class="drag_and_canvas_wrapper">
+                    <canvas id="canvas"></canvas>
+                </div>
+                
+
+                <!-- <div class="grag_block_time">
+                    <div class="grag_block_time_container">
+                        
+                    </div>
+                </div> -->
+
+
+
+                </div><!-- sequence_block -->
+
+                <!-- settings space -->
+                <div class="main_work_space sequence_settings_block"><!-- sequence_settings_block -->
+
+                    <div class="sequence_targeting_filter">
+
+                        <div class="sequence_found xs-fes">
+                            <div class="xs-fbc">
+                                <p>Total Selected:</p>
+                                <div>10,102,122</div>
+                            </div>
+                        </div>
+                        <!-- sequence_targeting_found -->
+
+                        <div class="sequence_targeting_filter_block xs-fbs">
+
+                            <div class="sequence_filters_condition_title xs-fsc">
+                                <h6>Targeting</h6>
+                            </div>
+
+                            <!-- targeting container -->
+                            <div class="sequence_filters_condition xs-fsc xs-fw">
+
+                                <!-- solo filter block -->
+                                <div class="sequence_filter_condition_container">
+                                    <div class="sequence_filter_condition_container_close">
+                                        <button><i class="fas fa-times"></i></button>
+                                    </div>
+                                    <div class="sequence_group_filter group_was_chosen">
+                                        <p class="sequence_group_filter_value" data-value="tag">Tag</p>
+                                        <ul class="">
+                                            <li data-value="category" class="category">Category</li>
+                                            <li data-value="country" class="country">Country</li>
+                                            <li data-value="source" class="source">Source</li>
+                                            <li data-value="user" class="user">User</li>
+                                            <li data-value="tag" class="tag">Tag</li>
+                                        </ul>
+                                    </div>
+                                    <div class="div_separator">
+                                        <div class="separator_tag">
+                                            <ul data-tag-condition="is_not">
+                                                <li data-tag-condition="is">is</li>
+                                                <li data-tag-condition="is_not">is not</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="sub_sequence_group_filter">
+                                        <p class="sub_sequence_group_value" data-value="tag_2">Tag 2</p>
+                                        <ul class="">
+                                            <li data-value="category_1" class="category">Category 1</li>
+                                            <li data-value="category_2" class="category">Category 2</li>
+                                            <li data-value="category_3" class="category">Category 3</li>
+                                            <li data-value="category_4" class="category">Category 4</li>
+                                            <li data-value="category_5" class="category">Category 5</li>
+                                            <li data-value="country_1" class="country">Country 1</li>
+                                            <li data-value="country_2" class="country">Country 2</li>
+                                            <li data-value="country_3" class="country">Country 3</li>
+                                            <li data-value="country_4" class="country">Country 4</li>
+                                            <li data-value="country_5" class="country">Country 5</li>
+                                            <li data-value="source_1" class="source">Source 1</li>
+                                            <li data-value="source_2" class="source">Source 2</li>
+                                            <li data-value="source_3" class="source">Source 3</li>
+                                            <li data-value="source_4" class="source">Source 4</li>
+                                            <li data-value="source_5" class="source">Source 5</li>
+                                            <li data-value="user_1" class="user">User 1</li>
+                                            <li data-value="user_2" class="user">User 2</li>
+                                            <li data-value="user_3" class="user">User 3</li>
+                                            <li data-value="user_4" class="user">User 4</li>
+                                            <li data-value="user_5" class="user">User 5</li>
+                                            <li data-value="tag_1" class="tag">Tag 1</li>
+                                            <li data-value="tag_2" class="tag">Tag 2</li>
+                                            <li data-value="tag_3" class="tag">Tag 3</li>
+                                            <li data-value="tag_4" class="tag">Tag 4</li>
+                                            <li data-value="tag_5" class="tag">Tag 5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+    
+                                <!-- solo filter block -->
+                                <div class="sequence_filter_condition_container">
+                                    <div class="sequence_filter_condition_container_close">
+                                        <button><i class="fas fa-times"></i></button>
+                                    </div>
+                                    <div class="sequence_group_filter group_was_chosen">
+                                        <p class="sequence_group_filter_value" data-value="country">Country</p>
+                                        <ul class="">
+                                            <li data-value="category" class="category">Category</li>
+                                            <li data-value="country" class="country">Country</li>
+                                            <li data-value="source" class="source">Source</li>
+                                            <li data-value="user" class="user">User</li>
+                                            <li data-value="tag" class="tag">Tag</li>
+                                        </ul>
+                                    </div>
+                                    <div class="div_separator">
+                                        <div class="separator_tag">
+                                            <ul data-tag-condition="is">
+                                                <li data-tag-condition="is">is</li>
+                                                <li data-tag-condition="is_not">is not</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="sub_sequence_group_filter">
+                                        <p class="sub_sequence_group_value" data-value="country_2">Country 2</p>
+                                        <ul class="">
+                                            <li data-value="category_1" class="category">Category 1</li>
+                                            <li data-value="category_2" class="category">Category 2</li>
+                                            <li data-value="category_3" class="category">Category 3</li>
+                                            <li data-value="category_4" class="category">Category 4</li>
+                                            <li data-value="category_5" class="category">Category 5</li>
+                                            <li data-value="country_1" class="country">Country 1</li>
+                                            <li data-value="country_2" class="country">Country 2</li>
+                                            <li data-value="country_3" class="country">Country 3</li>
+                                            <li data-value="country_4" class="country">Country 4</li>
+                                            <li data-value="country_5" class="country">Country 5</li>
+                                            <li data-value="source_1" class="source">Source 1</li>
+                                            <li data-value="source_2" class="source">Source 2</li>
+                                            <li data-value="source_3" class="source">Source 3</li>
+                                            <li data-value="source_4" class="source">Source 4</li>
+                                            <li data-value="source_5" class="source">Source 5</li>
+                                            <li data-value="user_1" class="user">User 1</li>
+                                            <li data-value="user_2" class="user">User 2</li>
+                                            <li data-value="user_3" class="user">User 3</li>
+                                            <li data-value="user_4" class="user">User 4</li>
+                                            <li data-value="user_5" class="user">User 5</li>
+                                            <li data-value="tag_1" class="tag">Tag 1</li>
+                                            <li data-value="tag_2" class="tag">Tag 2</li>
+                                            <li data-value="tag_3" class="tag">Tag 3</li>
+                                            <li data-value="tag_4" class="tag">Tag 4</li>
+                                            <li data-value="tag_5" class="tag">Tag 5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <!-- button + condition -->
+                                <div class="sequence_add_condition xs-fsc">
+                                    <button class="sequence_add_condition_button">+ <span> Condition</span></button>
+                                    <ul class="sequence_add_condition_dropdown">
+                                        <li class="category">
+                                            <p data-value="category">Category</p>
+                                            <ul>
+                                                <li data-value="category_1" class="category">Category 1</li>
+                                                <li data-value="category_2" class="category">Category 2</li>
+                                                <li data-value="category_3" class="category">Category 3</li>
+                                                <li data-value="category_4" class="category">Category 4</li>
+                                                <li data-value="category_5" class="category">Category 5</li>
+                                            </ul>
+                                        </li>
+                                        <li class="country">
+                                            <p data-value="country">Country</p>
+                                            <ul>
+                                                <li data-value="country_1" class="country">Country 1</li>
+                                                <li data-value="country_2" class="country">Country 2</li>
+                                                <li data-value="country_3" class="country">Country 3</li>
+                                                <li data-value="country_4" class="country">Country 4</li>
+                                                <li data-value="country_5" class="country">Country 5</li>
+                                            </ul>
+                                        </li>
+                                        <li class="source">
+                                            <p data-value="source">Source</p>
+                                            <ul>
+                                                <li data-value="source_1" class="source">Source 1</li>
+                                                <li data-value="source_2" class="source">Source 2</li>
+                                                <li data-value="source_3" class="source">Source 3</li>
+                                                <li data-value="source_4" class="source">Source 4</li>
+                                                <li data-value="source_5" class="source">Source 5</li>
+                                            </ul>
+                                        </li>
+                                        <li class="user">
+                                            <p data-value="user">User</p>
+                                            <ul>
+                                                <li data-value="user_1" class="user">User 1</li>
+                                                <li data-value="user_2" class="user">User 2</li>
+                                                <li data-value="user_3" class="user">User 3</li>
+                                                <li data-value="user_4" class="user">User 4</li>
+                                                <li data-value="user_5" class="user">User 5</li>
+                                            </ul>
+                                        </li>
+                                        <li class="tag">
+                                            <p data-value="tag">Tag</p>
+                                            <ul>
+                                                <li data-value="tag_1" class="tag">Tag 1</li>
+                                                <li data-value="tag_2" class="tag">Tag 2</li>
+                                                <li data-value="tag_3" class="tag">Tag 3</li>
+                                                <li data-value="tag_4" class="tag">Tag 4</li>
+                                                <li data-value="tag_5" class="tag">Tag 5</li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- sequence_targeting_filter_block -->
+
+                        <div class="sequence_scheduling_filter_block xs-fbs">
+
+                            <div class="sequence_scheduling_filter_title xs-fsc">
+                                <h6>Scheduling</h6>
+                            </div>
+
+                            <div class="sequence_scheduling_filter_container xs-fss">
+                                <div class="sequence_scheduling_filter xs-fcc">
+                                    <ul>
+                                        <li class="xs-fsc">
+                                            <div class="xs-fcc">
+                                                <input name="shedule" type="radio" checked id="immediatly_rb">
+                                                <div class="radio_btn">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <p>Immediatly</p>
+                                        </li>
+                                        <li class="xs-fsc">
+                                            <div class="xs-fcc">
+                                                <input name="shedule" type="radio" id="shedule_rb">
+                                                <div class="radio_btn">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <p>Schedule</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="table_only_for_shedule">
+                                    <div class="table_only_for_shedule_time_top xs-fsc">
+                                        <input type="text" placeholder="Value">
+                                        <div class="custom-select shedule-custom-select">
+                                            <select>
+                                                <option value="undefined" selected>Unit</option>
+                                                <option value="Minutes">Minutes</option>
+                                                <option value="Hours">Hours</option>
+                                                <option value="Days">Days</option>
+                                                <option value="Weeks">Weeks</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="custom-select shedule-custom-select time_range">
+                                        <select>
+                                            <option value="undefined">Timming:</option>
+                                            <option value="any_time" selected>Any Time</option>
+                                            <option value="send_between">Send Between</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="table_only_for_shedule_time_from_to xs-fbs">
+                                        <div class="time_from xs-fsc">
+                                            <p>From</p>
+                                            <input type="time" value="08:00">
+                                        </div>
+                                        <div class="time_to xs-fsc">
+                                            <p>To</p>
+                                            <input type="time" value="20:00">
+                                        </div>
+                                    </div>
+
+                                    <div class="table_only_for_shedule_save">
+                                        <button>Save & Update Schedule</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="sequence_opt_in_filter_block xs-fsc">
+
+                            <div class="sequence_opt_in_filter_title xs-fsc">
+                                <h6>Automated opt-in</h6>
+                            </div>
+
+                            <div class="sequence_opt_in_filter_container xs-fcc">
+                                <input type="checkbox" checked>
+                                <div class="slide_button">
+                                    <span class="circle"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div><!-- sequence_targeting_filter -->
+
+                </div><!-- sequence_settings_block -->
+
+            </div>
+        </main>
+
+        <!-- 4 filter block for script clone  (with is / is not)-->
+        <div class="add_new_condition_block_script_with_param" style="display: none;">
+            <div class="sequence_filter_condition_container">
+                <div class="sequence_filter_condition_container_close">
+                    <button><i class="fas fa-times"></i></button>
+                </div>
+                <div class="sequence_group_filter">
+                    <p class="sequence_group_filter_value">Filter by</p>
+                    <ul class="">
+                        <li data-value="category" class="category">Category</li>
+                        <li data-value="country" class="country">Country</li>
+                        <li data-value="source" class="source">Source</li>
+                        <li data-value="user" class="user">User</li>
+                        <li data-value="tag" class="tag">Tag</li>
+                    </ul>
+                </div>
+                <div class="div_separator">
+                    <div class="separator_tag">
+                        <ul data-tag-condition="is">
+                            <li class="active" data-tag-condition="is">is</li>
+                            <li class="" data-tag-condition="is_not">is not</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub_sequence_group_filter">
+                    <p class="sub_sequence_group_value">Value</p>
+                    <ul class="">
+                        <li data-value="category_1" class="category">Category 1</li>
+                        <li data-value="category_2" class="category">Category 2</li>
+                        <li data-value="category_3" class="category">Category 3</li>
+                        <li data-value="category_4" class="category">Category 4</li>
+                        <li data-value="category_5" class="category">Category 5</li>
+                        <li data-value="country_1" class="country">Country 1</li>
+                        <li data-value="country_2" class="country">Country 2</li>
+                        <li data-value="country_3" class="country">Country 3</li>
+                        <li data-value="country_4" class="country">Country 4</li>
+                        <li data-value="country_5" class="country">Country 5</li>
+                        <li data-value="source_1" class="source">Source 1</li>
+                        <li data-value="source_2" class="source">Source 2</li>
+                        <li data-value="source_3" class="source">Source 3</li>
+                        <li data-value="source_4" class="source">Source 4</li>
+                        <li data-value="source_5" class="source">Source 5</li>
+                        <li data-value="user_1" class="user">User 1</li>
+                        <li data-value="user_2" class="user">User 2</li>
+                        <li data-value="user_3" class="user">User 3</li>
+                        <li data-value="user_4" class="user">User 4</li>
+                        <li data-value="user_5" class="user">User 5</li>
+                        <li data-value="tag_1" class="tag">a Tag 1</li>
+                        <li data-value="tag_2" class="tag">b Tag 2</li>
+                        <li data-value="tag_3" class="tag">c Tag 3</li>
+                        <li data-value="tag_4" class="tag">d Tag 4</li>
+                        <li data-value="tag_5" class="tag">e Tag 5</li>
+                        <li data-value="tag_6" class="tag">f Tag 5</li>
+                        <li data-value="tag_7" class="tag">g Tag 5</li>
+                        <li data-value="tag_8" class="tag">h Tag 5</li>
+                        <li data-value="tag_9" class="tag">i Tag 5</li>
+                        <li data-value="tag_10" class="tag">j Tag 5</li>
+                        <li data-value="tag_11" class="tag">k Tag 5</li>
+                        <li data-value="tag_12" class="tag">n Tag 5</li>
+                        <li data-value="tag_13" class="tag">l Tag 5</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3 filter block for script clone -->
+        <div class="add_new_condition_block_script" style="display: none;">
+            <div class="campaign_filter_condition_container">
+                <div class="campaign_filter_condition_container_close">
+                    <button><i class="fas fa-times"></i></button>
+                </div>
+                <div class="group_filter">
+                    <p class="group_filter_value">Filter by</p>
+                    <ul class="">
+                        <li data-value="language" class="language">Language</li>
+                        <li data-value="group" class="group">Group</li>
+                    </ul>
+                </div>
+                <div class="div_separator"></div>
+                <div class="sub_group_filter">
+                    <p class="sub_group_value">Value</p>
+                    <ul class="">
+                        <li data-value="ua" class="language">ua</li>
+                        <li data-value="ru" class="language">ru</li>
+                        <li data-value="pl" class="language">pl</li>
+                        <li data-value="de" class="language">de</li>
+                        <li data-value="en" class="language">en</li>
+                        <li data-value="group_1" class="group">group 1</li>
+                        <li data-value="group_2" class="group">group 2</li>
+                        <li data-value="group_3" class="group">group 3</li>
+                        <li data-value="group_4" class="group">group 4</li>
+                        <li data-value="group_5" class="group">group 5</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1 popup choose campaigns -->
+        <div class="campaign_choose_pop_up_container">
+            <div class="campaign_choose_pop_up campaign_choose_pop_up_large filter_campaign">
+                <div class="campaign_choose_pop_up_top xs-fbs">
+                    <div class="campaigns_filter_container">
+                        <div class="xs-fsc">
+                            <div class="campaigns_filter">
+                                <button>
+                                    <i class="fas fa-filter"></i>
+                                    <p>Filter</p>
+                                </button>
+                            </div>
+                            <div class="campaign_choose_pop_up_top_search xs-fcc">
+                                <button>
+                                    <i class="fas fa-search"></i>
+                                </button>
+                                <input type="text" placeholder="Search">
+                            </div>
+                        </div>
+
+                        <div class="xs-fbs xs-fw">
+                            <div class="campaign_filters_condition xs-fsc xs-fw">
+
+                                <!-- solo filter block -->
+                                <div class="campaign_add_condition xs-fsc">
+                                    <button class="campaign_add_condition_button">+ <span> Condition</span></button>
+                                    <ul class="campaign_add_condition_dropdown">
+                                        <li class="language">
+                                            <p data-value="language">Language</p>
+                                            <ul>
+                                                <li data-value="ua" class="language">ua</li>
+                                                <li data-value="ru" class="language">ru</li>
+                                                <li data-value="pl" class="language">pl</li>
+                                                <li data-value="de" class="language">de</li>
+                                                <li data-value="en" class="language">en</li>
+                                            </ul>
+                                        </li>
+                                        <li class="group">
+                                            <p data-value="group">Group</p>
+                                            <ul>
+                                                <li data-value="group_1" class="group">group 1</li>
+                                                <li data-value="group_2" class="group">group 2</li>
+                                                <li data-value="group_3" class="group">group 3</li>
+                                                <li data-value="group_4" class="group">group 4</li>
+                                                <li data-value="group_5" class="group">group 5</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="campaign_choose_pop_up_top_close">
+                        <button><i class="fas fa-times"></i></button>
+                    </div>
+
+                </div>
+                <div class="campaign_choose_pop_up_table">
+                    <div class="campaign_choose_pop_up_table_head">
+                        <ul class="xs-fbc">
+                            <li>Name
+                                <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div>
+                            </li>
+                            <li>Photo
+                                <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div>
+                            </li>
+                            <li>Views
+                                <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div>
+                            </li>
+                            <li>Clicks
+                                <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div>
+                            </li>
+                            <li>CTR
+                                <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div>
+                            </li>
+                            <li>Leads
+                                <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div>
+                            </li>
+                            <li>Lang
+                                <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div>
+                            </li>
+                            <li>Group
+                                <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div>
+                            </li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="campaign_choose_pop_up_table_body">
+                        
+                    </div>
+                </div>
+                <div class="campaign_choose_pop_up_table_btn_add">
+                    <button class="filter_campaign">add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2 popup create campaigns -->
+        <div class="campaign_pop_up_create_new_campaign">
+            <div class="campaign_pop_up_create_new_campaign_container">
+                <div class="xs-fec">
+                    <button class="campaign_pop_up_create_new_campaign_container_close"><i class="fas fa-times"></i></button>
+                </div>
+
+                <div class="campaign_pop_up_create_new_campaign_inputs xs-fbt xs-fw">
+
+                    <div class="inputs_left">
+                        <div class="campaign_pop_up_input_campaign_name">
+                            <p>Campaign Name</p>
+                            <input type="text" placeholder="Campaign Name">
+                        </div>
+
+                        <div class="campaign_pop_up_input_campaign_push_title">
+                            <p>Push Title</p>
+                            <input type="text" placeholder="Push Title">
+                        </div>
+
+                        <div class="campaign_pop_up_input_campaign_groups">
+                            <p>Group</p>
+                            <div class="custom-select campaign_pop_up_select">
+                                <select>
+                                    <option value="undefined" selected>Select Group:</option>
+                                    <option value="Dating_Health">Dating & Health</option>
+                                    <option value="Health">Health</option>
+                                    <option value="Beauty">Beauty</option>
+                                    <option value="Nutra">Nutra</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="campaign_pop_up_input_campaign_language">
+                            <p>Language</p>
+                            <div class="custom-select campaign_pop_up_select">
+                                <select>
+                                    <option value="undefined" selected>Select Language:</option>
+                                    <option value="en">EN</option>
+                                    <option value="ru">RU</option>
+                                    <option value="ua">UA</option>
+                                    <option value="pl">PL</option>
+                                    <option value="de">DE</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="campaign_pop_up_input_campaign_target_link">
+                            <p>Target Link</p>
+                            <input type="text" placeholder="Target Link">
+                        </div>
+                        
+                        <!-- input type file on create new campaign pop up -->
+                        <div class="xs-fbs icon_and_badge">
+                            <div class="campaign_pop_up_input_campaign_icon">
+                                <p>Badge</p>
+                                <div class="campaign_pop_up_input_campaign_icon_absolute">
+                                    <input type="file" placeholder="icon">
+                                    <div class="download_img">
+                                        <img src="../img/add.png" alt="">
+                                    </div>
+                                    <button class="clear_input_file"><i class="far fa-trash-alt"></i></button>
+                                    <div class="loader_dots active xs-fcc">
+                                        <ul class="loader_dots_container">
+                                            <li class="loader_dot dot_1"></li>
+                                            <li class="loader_dot dot_2"></li>
+                                            <li class="loader_dot dot_3"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- here -->
+                            <div class="campaign_pop_up_input_campaign_img">
+                                <p>Icon</p>
+                                <!-- <div id="croppic"> -->
+                                    <div id="cropContainerModal_152">
+                                        <img class="croppedImg" src="" alt="" id="cropContainerModal_old_img_152" >
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="inputs_right">
+
+                        <div class="campaign_pop_up_input_campaign_img">
+                            <p>Upload Your Photo</p>
+                            <!-- <div id="croppic"> -->
+                            <div id="cropContainerModal">
+                                <img class="croppedImg" src="" id="cropContainerModal_old_img" alt="">
+                            </div>
+                            <!-- </div> -->
+                        </div>
+
+                        <div class="campaign_pop_up_input_campaign_description">
+                            <p class="xs-fbc">Push Description <span class="textarea_length">240</span></p>
+                            <textarea placeholder="Push Description"></textarea>
+                        </div>
+
+                    </div>
+
+                    <div class="campaign_pop_up_save_button xs-fcc">
+                        <button>Save</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="drag_block_script_block" style="display:none">
+            <div class="drag_block" id="">
+                
+                <div class="drag_block_btn xs-fee">
+                    <button class="starting_step" style="display: none">Starting Step</button>
+                    <button class="make_as_first">Make As First</button>
+                    <button class="duplicate"><i class="far fa-copy"></i></button>
+                    <button class="delete"><i class="far fa-trash-alt"></i></button>
+                </div>
+                <div class="drag_block_container">
+                    <div class="before" data-element="pseudoelement"></div>
+                    <div class="after" data-element="pseudoelement"></div>
+                    <div class="drag_block_title">
+                        <h6 class="campaign_name_bold"></h6>
+                        <p class="push_title"></p>
+                    </div>
+                    <div class="drag_block_img">
+                        <img src="../img/campaigns_crypto_category_picture.jpg" alt="">
+                    </div>
+                    <div class="drag_block_stats">
+                        <ul class="xs-fbt xs-fw">
+                            <li class="views">
+                                <div></div>
+                                <p>Views</p>
+                            </li>
+                            <li class="clicks">
+                                <div></div>
+                                <p>Clicks</p>
+                            </li>
+                            <li class="ctr">
+                                <div><span></span>%</div>
+                                <p>CTR</p>
+                            </li>
+                            <li class="leads">
+                                <div></div>
+                                <p>Leads</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="drag_block_timer">
+                    
+                    <div class="timer_changer xs-fbc xs-fw">
+                        <input type="number" placeholder="Value" class="time_value">
+                        <div class="custom-select timer-changer-custom-select time_unit">
+                            <select>
+                                <option value="undefined">Unit</option>
+                                <option value="Minutes">Minutes</option>
+                                <option value="Hours">Hours</option>
+                                <option value="Days">Days</option>
+                            </select>
+                        </div>
+                        <button class="time_save"><i class="far fa-save"></i></button>
+                    </div>
+
+                    <div class="timer_view xs-fbc xs-fw">
+                        <input type="text" class="time_value" placeholder="Value" disabled value="">
+                        <input type="text" class="time_unit" placeholder="Unit" disabled value="">
+                        <button class="time_change"><i class="far fa-clock"></i></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="choose_campaign_script_block" style="display:none;">
+            <ul class="xs-fbc" data-key="" data-group="" data-language="">
+                <li data-id="1_1" class="name">
+                    <p></p>
+                </li>
+                <li data-id="1_2" class="photo"><img src="" alt=""></li>
+                <li data-id="1_3" class="views">
+                    <p></p>
+                </li>
+                <li data-id="1_4" class="clicks">
+                    <p></p>
+                </li>
+                <li data-id="1_5" class="ctr">
+                    <p></p>
+                </li>
+                <li data-id="1_6" class="leads">
+                    <p></p>
+                </li>
+                <li data-id="1_7" class="language">
+                    <p lang-value=""></p>
+                </li>
+                <li data-id="1_8" class="group">
+                    <p group-value=""></p>
+                </li>
+                <li>
+                    <p><i class="fas fa-check"></i>
+                        <input type="checkbox">
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- main style -->
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/style-custom.css">
+        
+        <script src="../js/sequence-state-test.js"></script>
+
+        <script src="/js/jquery-3.1.1.min.js"></script>
+        <script src="/js/jquery-ui.js"></script>
+        <script src="/js/script.js"></script>
+
+        <!-- pluggins -->
+        <!-- custom select -->
+        <link rel="stylesheet" href="/pluggins/custom_select/custom_select.css">
+        <script src="/pluggins/custom_select/custom_select.js"></script>
+        <!-- croppic -->
+        <link rel="stylesheet" href="../pluggins/croppic/croppic.css">
+        <script src="../pluggins/croppic/jquery.mousewheel.min.js"></script>
+        <script src="../pluggins/croppic/croppic.js"></script>
+        <script src="../pluggins/croppic/croppic_settings.js"></script>
+
+        <!-- page -->
+        <script src="../js/cookie.js"></script>
+        <link rel="stylesheet" href="/css/work_space/sequence.css">
+        <script src="/js/sequence.js"></script>
+        <!-- test -->
+        <!-- <script src="../js/test_main.js"></script> -->
+        <!-- <link rel="stylesheet" type="text/css" href="../css/work_space/test.css"> -->
+
+        <!-- filter search -->
+        <script src="../js/search_in_filter.js"></script>
+
+    </div>
+</body>
+
+</html>

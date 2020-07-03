@@ -1,0 +1,111 @@
+.generate_link {
+	width: 100%;
+	padding: 30px;
+	background: var(--w);
+	box-shadow: var(--shadow_1);
+	border-radius: 4px;
+	-webkit-transition:all .3s ease-in-out;
+	-o-transition:all .3s ease-in-out;
+	transition:all .3s ease-in-out;
+}
+.generate_link:hover {
+	box-shadow: var(--shadow_2);
+}
+
+.save_page_link p,
+.save_page_final_link p,
+.generate_link .select p {
+	font-size: 0.8em;
+	color: var(--gray);
+	margin-bottom: 5px;
+}
+
+.save_page_link input,
+.save_page_final_link input {
+	width: 100%;
+	height: 40px;
+	padding: 0 14px;
+	color: var(--gray);
+	background: var(--light);
+	border: 2px solid var(--light);
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+.save_page_link input::placeholder,
+.save_page_final_link input::placeholder {
+	color: var(--s);
+}
+
+.save_page_param > div {
+	width: calc( ( ( 100% - 130px ) / 3 ) - 20px );
+	margin-bottom: 20px;
+}
+
+.generate_link_button button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 39px;
+	width: 100%;
+	color: var(--w);
+	box-shadow: var(--shadow_1);
+	border-radius: 25px;
+	background: rgba(68,222,196,1);
+	background: -moz-linear-gradient(left, rgba(68,222,196,1) 0%, rgba(78,187,250,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(68,222,196,1)), color-stop(100%, rgba(78,187,250,1)));
+	background: -webkit-linear-gradient(left, rgba(68,222,196,1) 0%, rgba(78,187,250,1) 100%);
+	background: -o-linear-gradient(left, rgba(68,222,196,1) 0%, rgba(78,187,250,1) 100%);
+	background: -ms-linear-gradient(left, rgba(68,222,196,1) 0%, rgba(78,187,250,1) 100%);
+	background: linear-gradient(to right, rgba(68,222,196,1) 0%, rgba(78,187,250,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44dec4', endColorstr='#4ebbfa', GradientType=1 );
+	-webkit-transition:all .3s ease-in-out;
+	-o-transition:all .3s ease-in-out;
+	transition:all .3s ease-in-out;
+}
+.generate_link_button {
+	width: 130px !important;
+}
+.generate_link_button button:hover {
+	box-shadow: var(--shadow_2);
+}
+.save_page_final_link > div {
+}
+.save_page_final_link > div > input {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	margin-bottom: 0;
+}
+.save_page_final_link > div > button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.8em;
+	height: 40px;
+	color: var(--w);
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	background: rgba(68,222,196,1);
+	background: -moz-linear-gradient(-45deg, rgba(68,222,196,1) 0%, rgba(78,187,250,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(68,222,196,1)), color-stop(100%, rgba(78,187,250,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(68,222,196,1) 0%, rgba(78,187,250,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(68,222,196,1) 0%, rgba(78,187,250,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(68,222,196,1) 0%, rgba(78,187,250,1) 100%);
+	background: linear-gradient(135deg, rgba(68,222,196,1) 0%, rgba(78,187,250,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44dec4', endColorstr='#4ebbfa', GradientType=1 );
+	-webkit-transition:all .3s ease-in-out;
+	-o-transition:all .3s ease-in-out;
+	transition:all .3s ease-in-out;
+}
+.generate_link_button button:active,
+.save_page_final_link > div > button:active {
+	background: rgba(68,222,196,1);
+	background: -moz-linear-gradient(-45deg, rgba(68,222,196,1) 0%, rgba(68,222,196,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(68,222,196,1)), color-stop(100%, rgba(68,222,196,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(68,222,196,1) 0%, rgba(68,222,196,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(68,222,196,1) 0%, rgba(68,222,196,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(68,222,196,1) 0%, rgba(68,222,196,1) 100%);
+	background: linear-gradient(135deg, rgba(68,222,196,1) 0%, rgba(68,222,196,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44dec4', endColorstr='#44dec4', GradientType=1 );
+
+}

@@ -1,0 +1,30 @@
+/* main styles */
+@import url('main.css');
+/* navigation_space */
+@import url('navigation_space/navigation.css');
+/* work_space */
+@import url('work_space/work_space.css');
+
+/* styles write here */
+body {
+	min-height: 100vh;
+	min-height: calc(var(--vh, 1vh) * 100);
+	overflow: hidden;
+	background: var(--light);
+}
+/* default media */
+
+/* xl */
+@media screen and (min-width: 1200px) {}
+
+/* lg */
+@media screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/* md */
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+
+/* sm */
+@media screen and (min-width: 560px) and (max-width: 767px) {}
+
+/* xs */
+@media screen and (max-width: 559px) {}

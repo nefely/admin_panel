@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Generate Link | Omnia Push</title>
+    <meta name="theme-color" content="#383838" />
+</head>
+
+<body>
+    <div class="body_wrapper xs-fbs">
+        <nav>
+            <div class="nav_scroll_container">
+                <div class="nav_navigation">
+
+                    <div class="nav_logo">
+                        <a href="#" class="xs-fcc">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="nav_menu">
+                        <ul>
+                            <li>
+                                <a href="/">
+                                    <p>
+                                        <i class="fas fa-chart-bar"></i>
+                                        <span>Dashboard</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/audience.html">
+                                    <p>
+                                        <i class="fas fa-comment-dots"></i>
+                                        <span>Audience</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/campaigns.html">
+                                    <p>
+                                        <i class="fas fa-briefcase"></i>
+                                        <span>Campaigns</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/sequences">
+                                    <p>
+                                        <i class="fas fa-vector-square"></i>
+                                        <span>Sequences</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/settings.html">
+                                    <p>
+                                        <i class="fas fa-cog"></i>
+                                        <span>Settings</span>
+                                    </p>
+                                    <i class="fas fa-sort-down"></i>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="/settings/users.html">
+                                            <p>
+                                                <i class="fas fa-circle"></i>
+                                                <span>Users</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/settings/traffic-sources.html">
+                                            <p>
+                                                <i class="fas fa-circle"></i>
+                                                <span>Traffic Sources</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/settings/categories.html">
+                                            <p>
+                                                <i class="fas fa-circle"></i>
+                                                <span>Categories</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/settings/tags.html">
+                                            <p>
+                                                <i class="fas fa-circle"></i>
+                                                <span>Tags</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="current_page_is_active">
+                                <a href="/generate_link.html">
+                                    <p>
+                                        <i class="fas fa-link"></i>
+                                        <span>Generate Link</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="nav_logout">
+                    <ul>
+                        <li class="xs-fbc">
+                            <div class="xs-fsc">
+                                <img src="img/user.png" alt="">
+                                <p>Emil Walter</p>
+                            </div>
+                            <a href="#">
+                                <i class="fas fa-sign-out-alt"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="main_scroll_container">
+
+                <div class="main_cramps xs-fsc">
+                    <h4><a href="#">Generate Link</a></h4>
+                </div>
+
+                <div class="main_work_space">
+
+                    <div class="generate_link">
+                        
+                        <div class="save_page_link">
+                            <p>Save Page Link</p>
+                            <input type="text" placeholder="Save Page Link">
+                        </div>
+
+                        <div class="save_page_param xs-fbe xs-fw">
+
+                            <div class="select">
+                                <p>Category</p>
+                                <div class="custom-select generate-link-select" >
+                                    <select id="category">
+                                        <option value="0" selected>Select Category:</option>
+                                        <option value="1">Dating</option>
+                                        <option value="2">Health</option>
+                                        <option value="3">Beauty</option>
+                                        <option value="4">Crypto</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="select">
+                                <p>Traffic Source</p>
+                                <div class="custom-select generate-link-select" >
+                                    <select id="source">
+                                        <option value="0" selected>Select Traffic Source:</option>
+                                        <option value="1">Fb</option>
+                                        <option value="2">Google</option>
+                                        <option value="3">Instagram</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="select">
+                                <p>Tag</p>
+                                <div class="custom-select generate-link-select" >
+                                    <select id="tag">
+                                        <option value="0" selected>Select Tag:</option>
+                                        <option value="1">#Omnia</option>
+                                        <option value="2">#Viespire</option>
+                                        <option value="3">#Media</option>
+                                        <option value="4">#Crypto</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="generate_link_button">
+                                <button>Generate Link</button>
+                            </div>
+                        </div>
+
+                        <div class="save_page_final_link">
+                            <p>Final Link</p>
+                            <div class="xs-fbc">
+                                <input type="text" placeholder="Final Link">
+                                <button><i class="far fa-copy"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <!-- main style -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-custom.css">
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/script.js"></script>
+
+        <!-- page -->
+        <link rel="stylesheet" href="css/work_space/generate_link.css">
+        <script src="js/generate_link.js"></script>
+
+        <!-- pluggins -->
+        <!-- custom select -->
+        <link rel="stylesheet" href="pluggins/custom_select/custom_select.css">
+        <script src="pluggins/custom_select/custom_select.js"></script>
+
+        <!-- filter search -->
+        <script src="js/search_in_filter.js"></script>
+
+    </div>
+</body>
+
+</html>

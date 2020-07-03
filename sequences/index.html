@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Sequences | Omnia Push</title>
+    <meta name="theme-color" content="#383838" />
+</head>
+
+<body>
+    <div class="body_wrapper xs-fbs">
+        <nav>
+            <div class="nav_scroll_container">
+                <div class="nav_navigation">
+
+                    <div class="nav_logo">
+                        <a href="#" class="xs-fcc">
+                            <img src="/img/logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="nav_menu">
+                        <ul>
+                            <li>
+                                <a href="/">
+                                    <p>
+                                        <i class="fas fa-chart-bar"></i>
+                                        <span>Dashboard</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/audience.html">
+                                    <p>
+                                        <i class="fas fa-comment-dots"></i>
+                                        <span>Audience</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/campaigns.html">
+                                    <p>
+                                        <i class="fas fa-briefcase"></i>
+                                        <span>Campaigns</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="current_page_is_active">
+                                <a href="/sequences">
+                                    <p>
+                                        <i class="fas fa-vector-square"></i>
+                                        <span>Sequences</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/settings.html">
+                                    <p>
+                                        <i class="fas fa-cog"></i>
+                                        <span>Settings</span>
+                                    </p>
+                                    <i class="fas fa-sort-down"></i>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="/settings/users.html">
+                                            <p>
+                                                <i class="fas fa-circle"></i>
+                                                <span>Users</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/settings/traffic-sources.html">
+                                            <p>
+                                                <i class="fas fa-circle"></i>
+                                                <span>Traffic Sources</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/settings/categories.html">
+                                            <p>
+                                                <i class="fas fa-circle"></i>
+                                                <span>Categories</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/settings/tags.html">
+                                            <p>
+                                                <i class="fas fa-circle"></i>
+                                                <span>Tags</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/generate_link.html">
+                                    <p>
+                                        <i class="fas fa-link"></i>
+                                        <span>Generate Link</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="nav_logout">
+                    <ul>
+                        <li class="xs-fbc">
+                            <div class="xs-fsc">
+                                <img src="/img/user.png" alt="">
+                                <p>Emil Walter</p>
+                            </div>
+                            <a href="#">
+                                <i class="fas fa-sign-out-alt"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="main_scroll_container">
+
+
+                <div class="main_cramps xs-fbc">
+                    <div class="main_cramps_left xs-fcc">
+                        <h4><a href="#">Sequences</a></h4>
+                    </div>
+
+                    <div class="settings_user_content_add_something xs-fec">
+                        <button class="new_sequence">+ New Sequence</button>
+                    </div>
+                </div>
+
+                <div class="main_work_space">
+
+                    <div class="main_sequences_work_space_top xs-fsc">
+                        <div class="main_sequences_work_space_add_folder">
+                            <button>+ New Folder</button>
+                        </div>
+                        <div class="main_sequences_work_space_search xs-fcc">
+                            <button>
+                                <i class="fas fa-search"></i>
+                            </button>
+                            <input type="text" placeholder="Search">
+                        </div>
+                    </div>
+
+                    <div class="main_sequences_work_space xs-fss">
+
+                        <div class="settings_user_navigation">
+                            <ul>
+                                <li>
+                                    <button>
+                                        <div>
+                                            <i class="fas fa-folder"></i>
+                                            <i class="far fa-folder-open"></i>
+                                        </div>
+                                        <span>Folder 1</span>
+                                    </button>
+                                    <ul>
+                                        <li>
+                                            <button>
+                                                <div>
+                                                    <i class="fas fa-folder"></i>
+                                                    <i class="far fa-folder-open"></i>
+                                                </div>
+                                                <span>Folder 1.1</span>
+                                            </button>
+                                            <ul>
+                                                <li class="sequence_folder">
+                                                    <button data-folder-id="1.1.1">
+                                                        <div>
+                                                            <i class="fas fa-layer-group"></i>
+                                                        </div>
+                                                        <span>Folder 1.1.1</span>
+                                                    </button>
+                                                </li>
+                                                <li class="sequence_folder">
+                                                    <button data-folder-id="1.1.2">
+                                                        <div>
+                                                            <i class="fas fa-layer-group"></i>
+                                                        </div>
+                                                        <span>Folder 1.1.2</span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div> <!-- settings_navigation -->
+
+                        <div class="settings_user_content">
+                            <div class="table_container">
+                                <div class="settings_user_table">
+                                    <ul class="settings_user_table_head">
+                                        <li>Name 
+                                            <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div>
+                                        </li>
+                                        <li>Status 
+                                            <div class="xs-fcc xs-fw"><i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i></div>
+                                        </li>
+                                        <li></li>
+                                    </ul>
+
+                                    <!-- table bodies -->
+                                    <div class="settings_user_table_body" data-folder-id="1.1.1">
+                                        <ul class="settings_user_table_ul" data-key="1">
+                                            <li class="name">
+                                                <p>Review 1.1</p>
+                                            </li>
+                                            <li>
+                                                <div class="settings_status xs-fcc">
+                                                    <button class="play"><i class="fas fa-play"></i></button>
+                                                    <button class="pause"><i class="fas fa-pause"></i></button>
+                                                </div>
+                                            </li>
+                                            <li class="edit"><i class="fas fa-ellipsis-v"></i>
+                                                <ul>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_edit">Edit</button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_dublicate">Dublicate</button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_delete">Delete</button>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul> <!-- settings_user_table_ul -->
+                                        <ul class="settings_user_table_ul" data-key="2">
+                                            <li class="name">
+                                                <p>Review 1.2</p>
+                                            </li>
+                                            <li>
+                                                <div class="settings_status paused xs-fcc">
+                                                    <button class="play"><i class="fas fa-play"></i></button>
+                                                    <button class="pause"><i class="fas fa-pause"></i></button>
+                                                </div>
+                                            </li>
+                                            <li class="edit"><i class="fas fa-ellipsis-v"></i>
+                                                <ul>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_edit">Edit</button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_dublicate">Dublicate</button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_delete">Delete</button>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul> <!-- settings_user_table_ul -->
+                                        <ul class="settings_user_table_ul" data-key="3">
+                                            <li class="name">
+                                                <p>Review 1.3</p>
+                                            </li>
+                                            <li>
+                                                <div class="settings_status paused xs-fcc">
+                                                    <button class="play"><i class="fas fa-play"></i></button>
+                                                    <button class="pause"><i class="fas fa-pause"></i></button>
+                                                </div>
+                                            </li>
+                                            <li class="edit"><i class="fas fa-ellipsis-v"></i>
+                                                <ul>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_edit">Edit</button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_dublicate">Dublicate</button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_delete">Delete</button>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul> <!-- settings_user_table_ul -->
+                                        <ul class="settings_user_table_ul" data-key="template_li">
+                                            <li class="name">
+                                                <p>Name</p>
+                                            </li>
+                                            <li>
+                                                <div class="settings_status xs-fcc">
+                                                    <button class="play"><i class="fas fa-play"></i></button>
+                                                    <button class="pause"><i class="fas fa-pause"></i></button>
+                                                </div>
+                                            </li>
+                                            <li class="edit"><i class="fas fa-ellipsis-v"></i>
+                                                <ul>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_edit">Edit</button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_dublicate">Dublicate</button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_delete">Delete</button>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul> <!-- settings_user_table_ul -->
+                                        <ul class="settings_user_table_ul" data-key="empty_li">
+                                            <li class="name">
+                                                <p>Empty</p>
+                                            </li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul> <!-- settings_user_table_ul -->
+                                    </div>
+
+                                    <div class="settings_user_table_body" data-folder-id="1.1.2">
+                                        <ul class="settings_user_table_ul" data-key="1">
+                                            <li class="name">
+                                                <p>Review 2.1</p>
+                                            </li>
+                                            <li>
+                                                <div class="settings_status xs-fcc">
+                                                    <button class="play"><i class="fas fa-play"></i></button>
+                                                    <button class="pause"><i class="fas fa-pause"></i></button>
+                                                </div>
+                                            </li>
+                                            <li class="edit"><i class="fas fa-ellipsis-v"></i>
+                                                <ul>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_edit">Edit</button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_dublicate">Dublicate</button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_delete">Delete</button>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul> <!-- settings_user_table_ul -->
+                                        <ul class="settings_user_table_ul" data-key="template_li">
+                                            <li class="name">
+                                                <p>Name</p>
+                                            </li>
+                                            <li>
+                                                <div class="settings_status xs-fcc">
+                                                    <button class="play"><i class="fas fa-play"></i></button>
+                                                    <button class="pause"><i class="fas fa-pause"></i></button>
+                                                </div>
+                                            </li>
+                                            <li class="edit"><i class="fas fa-ellipsis-v"></i>
+                                                <ul>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_edit">Edit</button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_dublicate">Dublicate</button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_delete">Delete</button>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul> <!-- settings_user_table_ul -->
+                                        <ul class="settings_user_table_ul" data-key="empty_li">
+                                            <li class="name">
+                                                <p>Empty</p>
+                                            </li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul> <!-- settings_user_table_ul -->
+                                    </div>
+
+                                    <div class="settings_user_table_body" data-folder-id="empty">
+                                        <ul class="settings_user_table_ul" data-key="template_li">
+                                            <li>
+                                                <p>Name</p>
+                                            </li>
+                                            <li>
+                                                <div class="settings_status xs-fcc">
+                                                    <button class="play"><i class="fas fa-play"></i></button>
+                                                    <button class="pause"><i class="fas fa-pause"></i></button>
+                                                </div>
+                                            </li>
+                                            <li class="edit"><i class="fas fa-ellipsis-v"></i>
+                                                <ul>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_edit">Edit</button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_dublicate">Dublicate</button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="campaigns_table_ul_delete">Delete</button>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul> <!-- settings_user_table_ul -->
+                                        <ul class="settings_user_table_ul" data-key="empty_li">
+                                            <li>
+                                                <p>Empty</p>
+                                            </li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul> <!-- settings_user_table_ul -->
+                                    </div>
+                                </div>
+                                <div class="show_more_btn">
+                                    <button>Show More</button>
+                                </div>
+                            </div> <!-- table_container -->
+                        </div> <!-- settings_user_content -->
+
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+
+
+        <!-- add folder clone block-->
+        <div class="script_add_folder" style="display: none">
+            <li class="">
+                <button>
+                    <div>
+                        <i class="fas fa-folder"></i>
+                        <i class="far fa-folder-open"></i>
+                    </div>
+                    <span>Folder Script</span>
+                </button>
+                <ul></ul>
+            </li>
+        </div>
+
+        <!-- add folder pop up block-->
+
+        <div class="add_folder_pop_up_create_new_table_ul">
+            <div class="add_folder_pop_up_create_new_table_ul_container">
+
+                <div class="xs-fbc">
+                    <p>Create New Folder</p>
+                    <button class="add_folder_pop_up_close"><i class="fas fa-times"></i></button>
+                </div>
+                
+                <div class="add_folder_pop_up_input">
+                    <p>Folder Name</p>
+                    <input type="text" placeholder="Folder Name">
+                </div>
+
+                <div class="add_folder_pop_up_save">
+                    <button>Save</button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="add_new_flow_pop_up">
+            <div class="add_new_flow_pop_up_container">
+
+                <div class="xs-fbc">
+                    <p>Create New Flow</p>
+                    <button class="add_new_flow_pop_up_close"><i class="fas fa-times"></i></button>
+                </div>
+                
+                <div class="add_new_flow_pop_up_input">
+                    <p>Flow Name</p>
+                    <input type="text" placeholder="Flow Name">
+                    <p>Created flow will be placed in <span>{Folder}</span></p>
+                </div>
+
+                <div class="add_flow_pop_up_button_container">
+                    <button class="add_flow_pop_up_create">Create</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- main style -->
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/style-custom.css">
+        <script src="/js/jquery-3.1.1.min.js"></script>
+        <script src="/js/script.js"></script>
+
+        <!-- page -->
+        <link rel="stylesheet" href="/css/work_space/sequences.css">
+        <script src="/js/sequences.js"></script>
+
+    </div>
+</body>
+
+</html>
